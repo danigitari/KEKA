@@ -19,13 +19,12 @@
       </div>
       <div class="absolute flex items-right call_to_action">
         <button
-          class="btn-primary p-2 bg-kekaBlue text-white text-bold rounded-lg shadow-md"
+          class="btn-primary py-3 px-5 bg-kekaBlue text-white text-[20px] rounded-[25px] shadow-md"
         >
           Get Started
         </button>
       </div>
       <div class="absolute bottom-6 right-4">
-
           <i
             class="fa fa-arrow-down animate-bounce w-8 h-8 border-2 border-blue-500 rounded-full flex items-center justify-center"
             aria-hidden="true"
@@ -107,7 +106,7 @@ export default {
 </script>
 <style scoped>
 .navigate {
-  z-index: 2;
+  z-index: 3;
 }
 .active {
   background-color: aqua;
@@ -116,12 +115,13 @@ export default {
   z-index: 3;
 }
 .call_to_action {
-  top: 70%;
+  top: 60%;
   left: 8%;
-  transition: transform 1 s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .call_to_action button:hover {
-  background: rgb(12, 12, 215);
-  transform: scale(1.1);
+  background-color: white;  
+  color:black;
+  
 }
 </style>

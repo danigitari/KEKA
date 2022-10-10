@@ -14,7 +14,7 @@
             <div class="dropdown-menu absolute bg-white shadow-lg">
               <router-link to="authentic-anti-counterfeit-solutions">
                 <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                Authentic
+                  Authentic
                 </div>
               </router-link>
               <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
@@ -120,11 +120,11 @@
                 optimization, and sustainability
               </p>
               <div class="flex justify-center">
-                <button
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-md"
-                >
-                  Learn more
-                </button>
+            <router-link to="aws_managed_services"
+              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+            >
+              Learn more
+            </router-link >
               </div>
             </div>
           </div>
@@ -151,11 +151,11 @@
                 manufacturer
               </p>
               <div class="flex justify-center m-4">
-                <button
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-md"
-                >
-                  Learn more
-                </button>
+            <router-link to="authentic-anti-counterfeit-solutions"
+              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+            >
+              Learn more
+            </router-link >
               </div>
             </div>
           </div>
@@ -181,11 +181,11 @@
                 vision in their education system.
               </p>
               <div class="flex justify-center">
-                <button
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-md"
-                >
-                  Learn more
-                </button>
+            <router-link to="the_shule_project"
+              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+            >
+              Learn more
+            </router-link >
               </div>
             </div>
           </div>
@@ -209,11 +209,11 @@
                 Experience IT Efficiency with Lower Costs Predictable Monthly
               </p>
               <div class="flex justify-center">
-                <button
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-md"
-                >
-                  Learn more
-                </button>
+            <router-link to="daas_cooperate"
+              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+            >
+              Learn more
+            </router-link >
               </div>
             </div>
           </div>
@@ -238,11 +238,11 @@
           improve.
 
           <div class="flex justify-center p-10">
-            <button
+            <router-link to="daas_cooperate"
               class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
             >
               Learn more
-            </button>
+            </router-link >
           </div>
         </div>
       </div>
@@ -256,7 +256,7 @@
         </div>
         <div class="flex flex-wrap mx-10">
           <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
-            <div class="shadow-md">
+            <div>
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -264,10 +264,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">ELVIS MUNENE</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -275,10 +281,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">ZIPPORAH WACHIRA</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -286,10 +298,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">DANIEL GITARI</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -297,10 +315,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
+              <p class="text-sm text-center">Managing Director</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -308,10 +332,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">SAMUEL MUREKEFU</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -319,10 +349,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">ERNEST OTIENO</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -330,10 +366,16 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">INNOCENT MAMBO</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
           <div class="lg:w-1/4 xs:w-full sm:w-1/2 p-5 team">
-            <div class="col-span-2 col-start-2 shadow-lg">
+            <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
                   class="w-36 h-36 rounded-full my-5"
@@ -341,6 +383,12 @@
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">FLORENCE SIMBA</p>
+              <p class="text-sm text-center">Cloud Architect</p>
+              <div class="flex justify-center gap-3 py-5 text-blue">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -348,66 +396,70 @@
       <div class="mt-20 mb-20 flex justify-center">
         <p class="text-2xl font-bold m-10 text-dark bg-b">OUR PARTNERS</p>
       </div>
-      <div class="flex flex-wrap mx-10">
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${acer})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${aws})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${dell})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${intel})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${dot})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 partner"
-            :style="{ backgroundImage: `url(${lenovo})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${vmware})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${hp})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 partner"
-            :style="{ backgroundImage: `url(${authentic})` }"
-          ></div>
-        </div>
-        <div class="lg:w-1/4 p-5">
-          <div
-            class="p-2 w-64 h-36 shadow-lg partner bg-white"
-            :style="{ backgroundImage: `url(${huawei})` }"
-          ></div>
+      <div class="flex flex-wrap mx-10 bg-white">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${acer})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${aws})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${dell})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-56 h-32 partner"
+                :style="{ backgroundImage: `url(${intel})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${dot})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner"
+                :style="{ backgroundImage: `url(${lenovo})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${vmware})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${hp})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner"
+                :style="{ backgroundImage: `url(${authentic})` }"
+              ></div>
+            </div>
+            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+              <div
+                class="p-2 w-64 h-36 partner bg-white"
+                :style="{ backgroundImage: `url(${huawei})` }"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -440,13 +492,39 @@
           <p class="text-white font-bold px-10">
             KEKA PRECISION TECHNOLOGIES LIMITED
           </p>
+          <div class="flex justify-left p-10 px-10   gap-3 py-5 text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
-        <div class="lg:w-1/3 p-10">
+        <div class="lg:w-2/10 pt-10">
           <p class="text-white py-5 text-xl xs:px-10">SERVICES</p>
-          <div class="py-2 text-white xs:px-10">Authentic</div>
-          <div class="py-2 text-white xs:px-10">Aws managed sevices</div>
-          <div class="py-2 text-white xs:px-10">The shule project</div>
-          <div class="py-2 text-white xs:px-10">Daas cooperate</div>
+          <div class="py-2 text-gray-200 xs:px-10">Authentic</div>
+          <div class="py-2 text-gray-200 xs:px-10">Aws managed sevices</div>
+          <div class="py-2 text-gray-200 xs:px-10">The shule project</div>
+          <div class="py-2 text-gray-200 xs:px-10">Daas cooperate</div>
+        </div>
+        <div class="lg:w-2/10 pt-10">
+          <p class="text-white py-5 text-xl xs:px-10">SUPPORT</p>
+          <div class="py-2 text-gray-200 xs:px-10">About us</div>
+          <div class="py-2 text-gray-200 xs:px-10">Contact us</div>
+          <div class="py-2 text-gray-200 xs:px-10">Faq</div>
+        </div>
+        <div class="lg:w-2/10 pt-10">
+          <p class="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>
+          <div class="py-2 text-gray-200 xs:px-10">
+            <span class="font-bold pr-5"> Email : </span> info@kekaprecision.com
+          </div>
+          <div class="py-2 text-gray-200 xs:px-10">
+            <span class="font-bold pr-5"> Phone : </span> +254 7111 111
+          </div>
+        </div>
+      </div>
+      <div class="px-20 py-10">
+        <hr />
+        <div class="flex justify-center items-center pt-10 text-white">
+          Copyright ©2022 Keka Precision limited All Rights Reserved
         </div>
       </div>
     </div>
@@ -495,6 +573,28 @@ export default {
     const getStarted = () => {
       alert("I was clicked");
     };
+    const swipe = () => {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    };
+    onMounted(() => {
+      swipe();
+    });
 
     return {
       visibleSlide,
@@ -509,6 +609,7 @@ export default {
       ernest,
       slides,
       getStarted,
+      swipe,
       vmware,
       acer,
       aws,
@@ -549,13 +650,6 @@ export default {
   background-position: center;
   background-size: contain;
 } */
-.overlay {
-  position: absolute;
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
-  background: #000;
-}
 .call_to_action {
   transition: transform 0.3s ease;
 }
@@ -585,6 +679,11 @@ export default {
   opacity: 1;
   z-index: 5;
   display: block;
+  position: absolute;
+  left: 178px;
+  top: 102px;
+  background-color: #fff;
+  width: max-content;
   transform: translateY(0px);
 }
 .dropdown:hover .dropdown-menu {
