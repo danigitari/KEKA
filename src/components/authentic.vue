@@ -121,9 +121,10 @@
   </div>
 </template>
 <script>
-import { ref } from "@vue/reactivity";
+import { ref , onMounted } from "vue";
 import navigation from "./navigation.vue";
 import Footer from "./footer.vue";
+
 export default {
   components: {
     navigation,
@@ -131,8 +132,31 @@ export default {
   },
   setup() {
     const slide = require("../assets/authentic_a.jpg");
+        const swipe = () => {
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    };
+    onMounted(() => {
+      swipe();
+    });
     return {
       slide,
+      swipe,
     };
   },
 };

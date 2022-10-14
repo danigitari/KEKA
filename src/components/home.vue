@@ -1,74 +1,15 @@
 <template>
   <div class=" ">
-    <nav class="relative lg:container lg:mx-auto sm:px-5 p-1">
-      <div class="flex items-center justify-between">
-        <div class="">
-          <img class="h-24 w-full" src="../assets/logo.jpeg" />
-        </div>
-        <div class="hidden md:flex space-x-16">
-          <router-link to="/" class="hover:text-kekaBlue"> Home </router-link>
-          <div class="dropdown relative rounded-md hover:text-kekaBlue">
-            <div class="hover:text-kekaBlue">
-              Services <i class="fa fa-caret-down px-2" aria-hidden="true"></i>
-            </div>
-            <div class="dropdown-menu absolute bg-white shadow-lg">
-              <router-link to="authentic-anti-counterfeit-solutions">
-                <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                  Authentic
-                </div>
-              </router-link>
-              <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                <router-link to="aws-managed-services">
-                  Aws managed sevices
-                </router-link>
-              </div>
-              <div class="daas-dropdown">
-                <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                  <router-link to="device-as-a-service-solutions">
-                    Daas as a service
-                    <i class="fa fa-caret-down px-2" aria-hidden="true"></i>
-                  </router-link>
-                </div>
-                <div class="daas-dropdown-menu">
-                  <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                    <router-link to="the-shule-project">
-                      The shule project
-                    </router-link>
-                  </div>
-                  <div class="p-3 border-2 hover:bg-kekaBlue hover:text-white">
-                    <router-link to="device-as-a-service-cooperate">
-                      Daas cooperate
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <router-link to="/" class="hover:text-kekaBlue">
-            Contact us</router-link
-          >
-          <router-link to="/" class="hover:text-kekaBlue">
-            About us
-          </router-link>
-          <!-- <a href="" class="hover:text-kekaBlue"> Terms & Conditions </a>
-          <a href="" class="hover:text-kekaBlue"> Opt-out Preferences </a> -->
-        </div>
-      </div>
-    </nav>
+    <navigation />
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
-    <carousel class="   " v-slot="{ currentSlide }">
-      <carouselSlide
-        v-for="(slide, index) in slides"
-        :key="slide"
-        :index="index"
-      >
-        <div v-show="currentSlide === index + 1" class="relative">
-          <div class="overlay"></div>
-
-          <div
-            class="bg-cover object-fit h-screen pt-10 pb-20 xl:h-screen section"
-            :style="{ backgroundImage: `url(${slide})` }"
-          >
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper hero-section">
+        <div class="swiper-slide relative">
+          <div class="overlay absolute"></div>
+          <div class="absolute w-full h-full">
+            <img src="../assets/img1.jpg" alt="" />
+          </div>
+          <div class="absolute hero my-10">
             <div class="pt-10">
               <div
                 class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
@@ -87,12 +28,103 @@
                   financial and performance predictivity on a subscription basis
                   .
                 </p>
+                <div class="text-center flex justify-start mx-5">
+                  <button
+                    class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                    @click="scrollToServices"
+                  >
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </carouselSlide>
-    </carousel>
+        <div class="swiper-slide relative">
+          <div class="overlay absolute"></div>
+          <div class="absolute w-full h-full">
+            <img src="../assets/board.jpeg" alt="" />
+          </div>
+          <div class="absolute hero mt-10 pt-10">
+            <div class="text-white flex justify-center font-bold">
+              <div class="text-center lg:text-[40px] text-[30px]">
+                Device as a Service for Business
+              </div>
+            </div>
+            <div
+              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+            >
+              Device as a Service (DaaS) equips businesses with a full PC fleet,
+              IT support, and device life-cycle management packaged together in
+              one subscription-based offering.
+            </div>
+            <div class="text-center flex justify-center">
+              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                @click="goToDaasBusiness"
+              >
+
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <div class="overlay absolute"></div>
+          <div class="absolute w-full h-full">
+            <img src="../assets/daas_school.jpg" alt="" />
+          </div>
+          <div class="absolute hero mt-10 pt-10">
+            <div class="text-white flex justify-center font-bold">
+              <div class="text-center lg:text-[40px] text-[30px]">
+                Device as a Service for Schools
+              </div>
+            </div>
+            <div
+              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+            >
+              Device as a Service (DaaS) equips businesses with a full PC fleet,
+              IT support, and device life-cycle management packaged together in
+              one subscription-based offering.
+            </div>
+            <div class="text-center flex justify-center">
+              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+              @click="goToDaasEducation">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <div class="overlay absolute"></div>
+
+          <div class="absolute w-full h-full">
+            <img src="../assets/authentic_a.jpg" alt="" />
+          </div>
+          <div class="absolute hero mt-10 pt-10">
+            <div class="text-white flex justify-center font-bold">
+              <div class="text-center lg:text-[40px] text-[30px]">
+                AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
+              </div>
+            </div>
+            <div
+              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+            >
+              We create human friendly solutions protecting consumers , brands
+              and producers for quality consumption and revenue enhancement.
+            </div>
+            <div class="text-center flex justify-center">
+              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+              @click="goToAuthentic">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next text-white"></div>
+      <div class="swiper-button-prev text-white"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     <div class="bg-gray-100 pt-20 pb-20">
       <div class=" ">
@@ -101,7 +133,7 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap service">
         <div class="sm:w-1/2 lg:w-1/3 services gap">
           <div
             class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
@@ -120,11 +152,12 @@
                 optimization, and sustainability
               </p>
               <div class="flex justify-center">
-            <router-link to="aws_managed_services"
-              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-            >
-              Learn more
-            </router-link >
+                <router-link
+                  to="aws_managed_services"
+                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+                >
+                  Learn more
+                </router-link>
               </div>
             </div>
           </div>
@@ -151,16 +184,17 @@
                 manufacturer
               </p>
               <div class="flex justify-center m-4">
-            <router-link to="authentic-anti-counterfeit-solutions"
-              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-            >
-              Learn more
-            </router-link >
+                <router-link
+                  to="authentic-anti-counterfeit-solutions"
+                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+                >
+                  Learn more
+                </router-link>
               </div>
             </div>
           </div>
         </div>
-        <div class="sm:w-1/2 lg:w-1/3 services">
+        <div class="sm:w-1/2 lg:w-1/3 services ">
           <div
             class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
           >
@@ -181,11 +215,12 @@
                 vision in their education system.
               </p>
               <div class="flex justify-center">
-            <router-link to="the_shule_project"
-              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-            >
-              Learn more
-            </router-link >
+                <router-link
+                  to="the_shule_project"
+                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+                >
+                  Learn more
+                </router-link>
               </div>
             </div>
           </div>
@@ -209,11 +244,12 @@
                 Experience IT Efficiency with Lower Costs Predictable Monthly
               </p>
               <div class="flex justify-center">
-            <router-link to="daas_cooperate"
-              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-            >
-              Learn more
-            </router-link >
+                <router-link
+                  to="daas_cooperate"
+                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+                >
+                  Learn more
+                </router-link>
               </div>
             </div>
           </div>
@@ -238,11 +274,12 @@
           improve.
 
           <div class="flex justify-center p-10">
-            <router-link to="daas_cooperate"
+            <router-link
+              to="daas_cooperate"
               class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
             >
               Learn more
-            </router-link >
+            </router-link>
           </div>
         </div>
       </div>
@@ -396,64 +433,64 @@
       <div class="mt-20 mb-20 flex justify-center">
         <p class="text-2xl font-bold m-10 text-dark bg-b">OUR PARTNERS</p>
       </div>
-      <div class="flex flex-wrap mx-10 bg-white">
-        <div class="swiper mySwiper">
+      <div class=" mx-10 bg-white">
+        <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${acer})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${aws})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${dell})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-56 h-32 partner"
                 :style="{ backgroundImage: `url(${intel})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${dot})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner"
                 :style="{ backgroundImage: `url(${lenovo})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${vmware})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${hp})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner"
                 :style="{ backgroundImage: `url(${authentic})` }"
               ></div>
             </div>
-            <div class="lg:w-1/4 sm:w-full p-5 swiper-slide">
+            <div class="swiper-slide">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${huawei})` }"
@@ -485,63 +522,27 @@
         </button>
       </div>
     </div>
-    <div class="footer bg-kekaBlue">
-      <div class="flex flex-wrap">
-        <div class="lg:w-1/3 sm:w-1/2 xs:w-full p-10">
-          <img src="../assets/logo.jpeg" class="h-36 px-10 my-5" alt="" />
-          <p class="text-white font-bold px-10">
-            KEKA PRECISION TECHNOLOGIES LIMITED
-          </p>
-          <div class="flex justify-left p-10 px-10   gap-3 py-5 text-white">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-        <div class="lg:w-2/10 pt-10">
-          <p class="text-white py-5 text-xl xs:px-10">SERVICES</p>
-          <div class="py-2 text-gray-200 xs:px-10">Authentic</div>
-          <div class="py-2 text-gray-200 xs:px-10">Aws managed sevices</div>
-          <div class="py-2 text-gray-200 xs:px-10">The shule project</div>
-          <div class="py-2 text-gray-200 xs:px-10">Daas cooperate</div>
-        </div>
-        <div class="lg:w-2/10 pt-10">
-          <p class="text-white py-5 text-xl xs:px-10">SUPPORT</p>
-          <div class="py-2 text-gray-200 xs:px-10">About us</div>
-          <div class="py-2 text-gray-200 xs:px-10">Contact us</div>
-          <div class="py-2 text-gray-200 xs:px-10">Faq</div>
-        </div>
-        <div class="lg:w-2/10 pt-10">
-          <p class="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>
-          <div class="py-2 text-gray-200 xs:px-10">
-            <span class="font-bold pr-5"> Email : </span> info@kekaprecision.com
-          </div>
-          <div class="py-2 text-gray-200 xs:px-10">
-            <span class="font-bold pr-5"> Phone : </span> +254 7111 111
-          </div>
-        </div>
-      </div>
-      <div class="px-20 py-10">
-        <hr />
-        <div class="flex justify-center items-center pt-10 text-white">
-          Copyright ©2022 Keka Precision limited All Rights Reserved
-        </div>
-      </div>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import { onMounted, ref } from "@vue/runtime-core";
 import carousel from "../components/carousel.vue";
 import carouselSlide from "../components/carouselSlide.vue";
+import navigation from "../components/navigation.vue";
+import Footer from "../components/footer.vue";
+import { useRouter } from "vue-router"
 export default {
   components: {
     carousel,
     carouselSlide,
+    navigation,
+    Footer,
   },
   setup() {
     const visibleSlide = 0;
     const isOpen = ref(false);
+    const router = useRouter()
     const backgroundimage = require("../assets/img3.jpg");
     const slides = [
       require("../assets/img1.jpg"),
@@ -574,13 +575,45 @@ export default {
       alert("I was clicked");
     };
     const swipe = () => {
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView:3,
+            spaceBetween: 50,
+          },},
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    };
+    const swipeHeroSection = () => {
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        mousewheel: true,
+        keyboard: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: true,
         },
         pagination: {
           el: ".swiper-pagination",
@@ -592,12 +625,35 @@ export default {
         },
       });
     };
+    const goToDaasBusiness = () => {
+      router.push({name:"daas_cooperate"})
+    }
+       const goToDaasEducation = () => {
+      router.push({name:"theShuleProject"})
+    }
+           const goToAuthentic = () => {
+      router.push({name:"authentic"})
+    }
+        const scrollToServices = () => {
+
+          let element = document.querySelector('.service')
+          console.log(element)
+          element.scrollIntoView({behaviour:'smooth'})
+      
+    }
     onMounted(() => {
       swipe();
+      swipeHeroSection();
     });
 
     return {
+      router , 
+      scrollToServices,
+      goToDaasBusiness,
+      goToDaasEducation,
+      goToAuthentic,
       visibleSlide,
+      swipeHeroSection,
       backgroundimage,
       ken,
       sam,
@@ -626,8 +682,29 @@ export default {
 };
 </script>
 <style scoped>
+.swiper-button-next {
+  opacity: 0;
+  font-size: 10px;
+  transition: all .5s ease;
+}
+.swiper-button-prev:hover {
+  opacity: 0.7;
+  
+}
+.swiper-button-next:hover {
+  opacity: 0.7;
+
+}
+
+
+.swiper-button-prev {
+  opacity: 0;
+}
 .getstarted {
   pointer-events: auto;
+}
+.hero-section {
+  height: 550px;
 }
 .section {
   z-index: 1;
@@ -640,6 +717,12 @@ export default {
 }
 .team {
   transition: transform 0.5s ease;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team:hover {
   transform: scale(1.1);
@@ -662,36 +745,52 @@ export default {
   background-size: contain;
   background-position: center;
 }
-.dropdown-menu {
-  top: calc(100% + 0.5rem);
-  width: max-content;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-  transform: translateY(-10px);
-  z-index: 5;
+
+.overlay {
+  opacity: 0.5;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
 }
-.daas-dropdown-menu {
-  display: none;
-  transition: 0.5s ease-in-out;
-  transform: translate(-10px);
+.hero-text {
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 30%;
+  transition: all 1s ease;
 }
-.daas-dropdown:hover .daas-dropdown-menu {
-  opacity: 1;
-  z-index: 5;
-  display: block;
+.hero-text1 {
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 45%;
+  transition: all 1s ease;
+  padding: 0px 40px;
+}
+.hero {
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+}
+.show {
+  transform: translateY(100px);
   position: absolute;
-  left: 178px;
-  top: 102px;
-  background-color: #fff;
-  width: max-content;
-  transform: translateY(0px);
+  color: #fff;
+  font-size: 40px;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 35%;
 }
-.dropdown:hover .dropdown-menu {
-  top: calc(100% + 0.5rem);
-  width: max-content;
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-  transform: translateY(0px);
-  z-index: 5;
+.hero-text2 {
+  z-index: 11;
+  top: 60%;
+  left: 43%;
 }
 </style>
