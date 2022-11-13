@@ -6,19 +6,19 @@
         <div class="overlay"></div>
         <div
           class="bg-cover object-fit  pt-10 pb-20  section"
-          :style="{ backgroundImage: `url(${slide})` }"
+          :style="{ backgroundImage: `url(${slide})`  }"
         >
           <div class="">
             <div
               class="text-white  md:ml-10 lg:ml-10 md:pl-10 lg:px-20  absolute"
             >
               <p
-                class=" mt-10 mb-10 font-bold text-3xl text-white flex justify-right text-left align-content-start"
+                class=" mt-10 mb-10 pt-10 font-bold text-3xl text-white  flex justify-right text-left align-content-start"
               >
                 DEVICE AS A SERVICE
               </p>
               <p
-                class="mb-10 font-bold text-lg text-white flex justify-left text-left   lg:w-3/4"
+                class="mb-10 font-bold text-lg text-white flex justify-left text-left   lg:w-1/2"
               >
                 We have solutions for both schools and businesses. can be
                 tailored to meet requirements for performance end users , mobile
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="flex flex-wrap bg-white pt-5 pb-5">
-        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 px-10 text-center">
+        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 pl-20 text-center">
           <img
             src="../assets/Man-on-Comp.jpg"
             class="w-96 flex items-center"
@@ -157,7 +157,7 @@ export default {
 .section {
 
   height:500px;
-  background-position: center;
+  background-position: left;
 
 }
 .dropdown-menu {

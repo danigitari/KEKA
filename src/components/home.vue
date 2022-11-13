@@ -1,6 +1,9 @@
 <template>
   <div class=" ">
-    <navigation />
+    <div class="nav">
+      <navigation />
+    </div>
+
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper hero-section">
@@ -59,10 +62,10 @@
               one subscription-based offering.
             </div>
             <div class="text-center flex justify-center">
-              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+              <button
+                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
                 @click="goToDaasBusiness"
               >
-
                 Learn More
               </button>
             </div>
@@ -87,8 +90,10 @@
               one subscription-based offering.
             </div>
             <div class="text-center flex justify-center">
-              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
-              @click="goToDaasEducation">
+              <button
+                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                @click="goToDaasEducation"
+              >
                 Learn More
               </button>
             </div>
@@ -113,8 +118,10 @@
               and producers for quality consumption and revenue enhancement.
             </div>
             <div class="text-center flex justify-center">
-              <button class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
-              @click="goToAuthentic">
+              <button
+                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                @click="goToAuthentic"
+              >
                 Learn More
               </button>
             </div>
@@ -126,135 +133,87 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <div class="bg-gray-100 pt-20 pb-20">
+    <div class="bg-white pt-20 pb-20">
       <div class=" ">
         <p class="text-2xl font-bold m-10 text-dark flex justify-center">
           OUR SERVICES
         </p>
       </div>
-
-      <div class="flex flex-wrap service">
-        <div class="sm:w-1/2 lg:w-1/3 services gap">
-          <div
-            class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
-          >
-            <img
-              src="../assets/cloud.jpg"
-              class="h-48 w-full object-cover object-center"
-            />
-            <div class="p-6">
-              <p class="text-md font-semibold mb-3">AWS Managed Services</p>
-              <p class="leading-relaxed mb-3 text-sm">
-                We design and build secure, high-performance, resilient, and
-                efficient cloud infrastructure for a wide range of applications
-                and workloads. Premised on six pillars—operational excellence,
-                security, reliability, performance efficiency, cost
-                optimization, and sustainability
-              </p>
-              <div class="flex justify-center">
-                <router-link
-                  to="aws_managed_services"
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-                >
-                  Learn more
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sm:w-1/2 lg:w-1/3 services">
-          <div
-            class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
-          >
-            <div
-              class="bg-gray-500 h-48 sm:px-10 lg:px-12 flex items-center justify-center py-5"
+      <div class="flex flex-wrap justify-center mb-10">
+        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+          <h4 class="text-kekaBlue font-bold py-5">Aws Managed services</h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            A proprietary print and recognition technology built for global
+            usage under challenging conditions, connected to value-added
+            services that protect your brand and intellectual property as a
+            manufacturer
+          </p>
+          <div class="flex justify-start py-5">
+            <button
+              class="rounded-[20px] text-kekaBlue"
+              @click="scrollToServices"
             >
-              <img src="../assets/authentic.jpg" class="flex items-center" />
-            </div>
-
-            <div class="p-6 transition duration-300 ease-in">
-              <p class="text-md font-semibold mb-3">
-                Anti-Counterfeit Solution - Manufacturing
-              </p>
-              <div class="my-5"></div>
-              <p class="leading-relaxed mb-3 text-sm">
-                A proprietary print and recognition technology built for global
-                usage under challenging conditions, connected to value-added
-                services that protect your brand and intellectual property as a
-                manufacturer
-              </p>
-              <div class="flex justify-center m-4">
-                <router-link
-                  to="authentic-anti-counterfeit-solutions"
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-                >
-                  Learn more
-                </router-link>
-              </div>
-            </div>
+              Learn More
+            </button>
           </div>
         </div>
-        <div class="sm:w-1/2 lg:w-1/3 services ">
-          <div
-            class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
-          >
-            <img
-              src="../assets/daas.jpg"
-              class="lg:h-48 md:h-48 w-full object-cover object-center"
-            />
-
-            <div class="p-6">
-              <p class="text-md font-semibold mb-3">
-                Device as a Service - Education
-              </p>
-              <p class="leading-relaxed mb-3 text-sm">
-                Managed Device Services specifically designed for Students with
-                Education in mind. We Track Deploy, Manage, Maintain and protect
-                the devices The Intel® SFI Framework allows decision makers and
-                educators to understand, test drive, and implement the SFI
-                vision in their education system.
-              </p>
-              <div class="flex justify-center">
-                <router-link
-                  to="the_shule_project"
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-                >
-                  Learn more
-                </router-link>
-              </div>
-            </div>
+        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+          <h4 class="text-kekaBlue font-bold py-5">
+            Device as a Service - Education
+          </h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            Managed Device Services specifically designed for Students with
+            Education in mind. We Track Deploy, Manage, Maintain and protect the
+            devices .
+          </p>
+          <div class="flex justify-start py-5">
+            <button
+              class="rounded-[20px] text-kekaBlue"
+              @click="scrollToServices"
+            >
+              Learn More
+            </button>
           </div>
         </div>
-
-        <div class="sm:w-1/2 lg:w-1/3 services">
-          <div
-            class="border-2 border-gray-200 bg-[#ffffff] shadow-lg border-opacity-60 m-5 rounded-lg overflow-hidden"
-          >
-            <img
-              src="../assets/daas.jpg"
-              class="h-48 w-full object-cover object-center"
-            />
-            <div class="p-6">
-              <p class="text-md font-semibold mb-3">
-                Device as a Service - Business
-              </p>
-              <p class="leading-relaxed mb-3 text-sm">
-                Designed for business to meet all your end-user technology needs
-                at a single predictable monthly payment Modern End User
-                Experience IT Efficiency with Lower Costs Predictable Monthly
-              </p>
-              <div class="flex justify-center">
-                <router-link
-                  to="daas_cooperate"
-                  class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
-                >
-                  Learn more
-                </router-link>
-              </div>
-            </div>
+        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+          <h4 class="text-kekaBlue font-bold py-5">
+            Device as a Service - Business
+          </h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            Designed for business to meet all your end-user technology needs at
+            a single predictable monthly payment Modern End User Experience IT
+            Efficiency with Lower Costs Predictable Monthly
+          </p>
+          <div class="flex justify-start py-5">
+            <button
+              class="rounded-[20px] text-kekaBlue"
+              @click="scrollToServices"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+          <h4 class="text-kekaBlue font-bold py-5">
+            Authentic Anticounterfeit Solution
+          </h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            A proprietary print and recognition technology built for global
+            usage under challenging conditions, connected to value-added
+            services that protect your brand and intellectual property as a
+            manufacturer
+          </p>
+          <div class="flex justify-start py-5">
+            <button
+              class="rounded-[20px] text-kekaBlue"
+              @click="scrollToServices"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
+
       <div
         class="flex flex-col items-center justify-center p-10 bg-blue-500 text-white"
       >
@@ -276,9 +235,9 @@
           <div class="flex justify-center p-10">
             <router-link
               to="daas_cooperate"
-              class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-lg"
+              class="p-2 call_to_action text-white border-white"
             >
-              Learn more
+              LEARN MORE
             </router-link>
           </div>
         </div>
@@ -291,6 +250,18 @@
           The team are professional cloud architects certified by AWS, VMWare
           and Intel on various cloud and device services
         </div>
+        <div class="flex">
+          <div class="lg:w-1/2 p-5">
+            <div class="flex items-center justify-center">
+              <div class="p-2 flex items-center justify-center">
+                <div
+                  class=" my-5 team-lead"
+                  :style="{ backgroundImage: `url(${elvis})` }"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="flex flex-wrap mx-10">
           <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
             <div>
@@ -302,7 +273,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ELVIS MUNENE</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -430,10 +401,10 @@
           </div>
         </div>
       </div>
-      <div class="mt-20 mb-20 flex justify-center">
-        <p class="text-2xl font-bold m-10 text-dark bg-b">OUR PARTNERS</p>
+      <div class="mt-20 mb-5 flex justify-center bg-gray-100">
+        <p class="text-2xl font-bold m-10 text-dark">OUR PARTNERS</p>
       </div>
-      <div class=" mx-10 bg-white">
+      <div class="mx-10 bg-white">
         <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -500,7 +471,7 @@
         </div>
       </div>
     </div>
-    <div class="contact m-10">
+    <div class="contact bg-gray-100 p-10">
       <p class="text-2xl font-bold m-10 text-dark flex justify-center">
         CONTACT US
       </p>
@@ -516,7 +487,7 @@
       </div>
       <div class="flex justify-center">
         <button
-          class="btn-primary p-2 call_to_action bg-kekaBlue text-white rounded-lg shadow-md"
+          class="py-2 px-3 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
         >
           <a href="mailto:info@kekaprecision.com"> Book a consultation </a>
         </button>
@@ -531,7 +502,7 @@ import carousel from "../components/carousel.vue";
 import carouselSlide from "../components/carouselSlide.vue";
 import navigation from "../components/navigation.vue";
 import Footer from "../components/footer.vue";
-import { useRouter } from "vue-router"
+import { useRouter } from "vue-router";
 export default {
   components: {
     carousel,
@@ -542,7 +513,7 @@ export default {
   setup() {
     const visibleSlide = 0;
     const isOpen = ref(false);
-    const router = useRouter()
+    const router = useRouter();
     const backgroundimage = require("../assets/img3.jpg");
     const slides = [
       require("../assets/img1.jpg"),
@@ -593,9 +564,10 @@ export default {
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView:3,
+            slidesPerView: 3,
             spaceBetween: 50,
-          },},
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -626,29 +598,35 @@ export default {
       });
     };
     const goToDaasBusiness = () => {
-      router.push({name:"daas_cooperate"})
-    }
-       const goToDaasEducation = () => {
-      router.push({name:"theShuleProject"})
-    }
-           const goToAuthentic = () => {
-      router.push({name:"authentic"})
-    }
-        const scrollToServices = () => {
-
-          let element = document.querySelector('.service')
-          console.log(element)
-          element.scrollIntoView({behaviour:'smooth'})
-      
-    }
+      router.push({ name: "daas_cooperate" });
+    };
+    const goToDaasEducation = () => {
+      router.push({ name: "theShuleProject" });
+    };
+    const goToAuthentic = () => {
+      router.push({ name: "authentic" });
+    };
+    const scrollToServices = () => {
+      let element = document.querySelector(".service");
+      console.log(element);
+      element.scrollIntoView({ behaviour: "smooth" });
+    };
+    const toggleNavbarClass = () => {
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("sticky", window.scrollY > 0);
+      });
+    };
     onMounted(() => {
       swipe();
       swipeHeroSection();
+      toggleNavbarClass();
     });
 
     return {
-      router , 
+      router,
       scrollToServices,
+      toggleNavbarClass,
       goToDaasBusiness,
       goToDaasEducation,
       goToAuthentic,
@@ -685,17 +663,17 @@ export default {
 .swiper-button-next {
   opacity: 0;
   font-size: 10px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .swiper-button-prev:hover {
   opacity: 0.7;
-  
+}
+.nav {
+  transition: all 0.5s ease;
 }
 .swiper-button-next:hover {
   opacity: 0.7;
-
 }
-
 
 .swiper-button-prev {
   opacity: 0;
@@ -711,9 +689,10 @@ export default {
 }
 .services {
   transition: transform 0.2s ease-in;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .services:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .team {
   transition: transform 0.5s ease;
@@ -792,5 +771,28 @@ export default {
   z-index: 11;
   top: 60%;
   left: 43%;
+}
+.team-lead{
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+}
+.sticky {
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .sticky {
+    height: 100px !important;
+  }
+  .services {
+    width: 90% !important;
+    margin: 20px 10px;
+  }
 }
 </style>

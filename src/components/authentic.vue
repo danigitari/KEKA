@@ -102,7 +102,7 @@
             customer has never been closer to your brand than with authentic!
           </p>
         </div>
-        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 text-center">
+        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 lg:px-20 xs:px-10 text-center">
           <img
             src="../assets/authentic_d.jpg"
             class="p-5 h-96 flex items-center"
