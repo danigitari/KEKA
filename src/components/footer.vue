@@ -14,6 +14,7 @@
         </div>
         <div class="lg:w-2/10 pt-10">
           <p class="text-white py-5 text-xl xs:px-10">SERVICES</p>
+          <router-link to="/"> <div class="py-2 text-gray-200 xs:px-10">Home</div></router-link>
           <router-link to="authentic-anti-counterfeit-solutions"> <div class="py-2 text-gray-200 xs:px-10">  Authentic  </div> </router-link>
           <router-link to="aws-managed-services"> <div class="py-2 text-gray-200 xs:px-10">Aws managed sevices</div></router-link>
           <router-link to="the-shule-project"> <div class="py-2 text-gray-200 xs:px-10">The shule project</div></router-link>

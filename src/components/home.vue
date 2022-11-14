@@ -1,9 +1,6 @@
 <template>
   <div class=" ">
-    <div class="nav">
-      <navigation />
-    </div>
-
+    <navigation />
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper hero-section">
@@ -20,7 +17,7 @@
                 <p
                   class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
                 >
-                  The Right ICT Solutions Designed by You
+                  THE RIGHT ICT SOLUTIONS DESIGNED BY YOU
                 </p>
                 <p
                   class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
@@ -49,25 +46,29 @@
             <img src="../assets/board.jpeg" alt="" />
           </div>
           <div class="absolute hero mt-10 pt-10">
-            <div class="text-white flex justify-center font-bold">
-              <div class="text-center lg:text-[40px] text-[30px]">
-                Device as a Service for Business
-              </div>
-            </div>
             <div
-              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+              class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
             >
-              Device as a Service (DaaS) equips businesses with a full PC fleet,
-              IT support, and device life-cycle management packaged together in
-              one subscription-based offering.
-            </div>
-            <div class="text-center flex justify-center">
-              <button
-                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
-                @click="goToDaasBusiness"
+              <p
+                class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
               >
-                Learn More
-              </button>
+                DEVICE AS A SERVICE FOR BUSINESS
+              </p>
+              <p
+                class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
+              >
+                Device as a Service (DaaS) equips businesses with a full PC
+                fleet, IT support, and device life-cycle management packaged
+                together in one subscription-based offering. .
+              </p>
+              <div class="text-center flex justify-start mx-5">
+                <button
+                  class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                  @click="goToDaasBusiness"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -77,19 +78,22 @@
             <img src="../assets/daas_school.jpg" alt="" />
           </div>
           <div class="absolute hero mt-10 pt-10">
-            <div class="text-white flex justify-center font-bold">
-              <div class="text-center lg:text-[40px] text-[30px]">
-                Device as a Service for Schools
-              </div>
-            </div>
             <div
-              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+              class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
             >
-              Device as a Service (DaaS) equips businesses with a full PC fleet,
-              IT support, and device life-cycle management packaged together in
-              one subscription-based offering.
-            </div>
-            <div class="text-center flex justify-center">
+              <p
+                class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
+              >
+                DEVICE AS A SERVICE FOR SCHOOLS
+              </p>
+              <p
+                class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
+              >
+                Device as a Service (DaaS) equips businesses with a full PC
+                fleet, IT support, and device life-cycle management packaged
+                together in one subscription-based offering.
+              </p>
+            <div class="text-center flex justify-start mx-5">
               <button
                 class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
                 @click="goToDaasEducation"
@@ -97,6 +101,8 @@
                 Learn More
               </button>
             </div>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide relative">
@@ -106,18 +112,22 @@
             <img src="../assets/authentic_a.jpg" alt="" />
           </div>
           <div class="absolute hero mt-10 pt-10">
-            <div class="text-white flex justify-center font-bold">
-              <div class="text-center lg:text-[40px] text-[30px]">
-                AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
-              </div>
-            </div>
-            <div
-              class="text-[18px] flex justify-center text-white text-center font-bold my-5 my-10 py-5 pl-10 pr-10"
+          <div
+              class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
             >
-              We create human friendly solutions protecting consumers , brands
+              <p
+                class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
+              >
+                  AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
+              </p>
+
+                          <p
+                class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
+              >
+      We create human friendly solutions protecting consumers , brands
               and producers for quality consumption and revenue enhancement.
-            </div>
-            <div class="text-center flex justify-center">
+              </p>
+            <div class="text-center flex justify-start pl-5 ">
               <button
                 class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
                 @click="goToAuthentic"
@@ -125,6 +135,7 @@
                 Learn More
               </button>
             </div>
+              </div>
           </div>
         </div>
       </div>
@@ -250,18 +261,7 @@
           The team are professional cloud architects certified by AWS, VMWare
           and Intel on various cloud and device services
         </div>
-        <div class="flex">
-          <div class="lg:w-1/2 p-5">
-            <div class="flex items-center justify-center">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class=" my-5 team-lead"
-                  :style="{ backgroundImage: `url(${elvis})` }"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="flex flex-wrap mx-10">
           <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
             <div>
@@ -772,7 +772,7 @@ export default {
   top: 60%;
   left: 43%;
 }
-.team-lead{
+.team-lead {
   height: 300px;
   width: 300px;
   background-repeat: no-repeat;

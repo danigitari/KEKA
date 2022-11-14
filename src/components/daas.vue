@@ -10,7 +10,7 @@
         >
           <div class="">
             <div
-              class="text-white  md:ml-10 lg:ml-10 md:pl-10 lg:px-20  absolute"
+              class="text-white  md:ml-10 lg:ml-10 md:pl-10 lg:px-10  absolute"
             >
               <p
                 class=" mt-10 mb-10 pt-10 font-bold text-3xl text-white  flex justify-right text-left align-content-start"
@@ -18,7 +18,7 @@
                 DEVICE AS A SERVICE
               </p>
               <p
-                class="mb-10 font-bold text-lg text-white flex justify-left text-left   lg:w-1/2"
+                class="mb-10 font-bold text-lg text-white flex justify-left text-left   lg:w-2/5"
               >
                 We have solutions for both schools and businesses. can be
                 tailored to meet requirements for performance end users , mobile

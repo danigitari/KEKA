@@ -1,31 +1,40 @@
 <template>
-  <nav class="relative sm:px-5 text-kekaBlue font-bold navbar">
-    <div class="w-4/5 text-xs md:flex md:text-sm items-center justify-between">
-      <span class="flex  items-center ">
-        <div class="">
+  <nav class="relative text-kekaBlue font-bold navbar">
+    <div class="w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between">
+      <span class="flex items-center justify-start ">
+        <div class="pl-20 ">
           <img class="h-20 w-full" src="../assets/logo.jpeg" />
         </div>
-         <!-- <div class="text-md  "> <p class=" text-lg" > KEKA </p>  PRECISION </div> -->
-        </span>
+        <!-- <div class="text-md  "> <p class=" text-lg" > KEKA </p>  PRECISION </div> -->
+      </span>
 
-      <div class="hidden md:flex justify-end space-x-16 font-bold ml-20 ">
+      <div class="hidden md:flex justify-end space-x-16 font-bold mr-20 pr-10">
         <ul>
           <li class="navlink">
-            <router-link to="/" class="font-bold text-sm ">HOME</router-link>
+            <router-link to="/" class="font-bold text-sm">HOME</router-link>
+          </li>
+          <li class="navlink">
+            <router-link to="/" class="font-bold text-sm"
+              >ABOUT US
+            </router-link>
           </li>
           <li class="services">
             <div class="test-dropdown">
               <div class="text">
-                <p class="font-bold text-sm ">SERVICES</p>
+                <p class="font-bold text-sm">SERVICES</p>
                 <i class="fa-sharp fa-solid fa-chevron-down px-2 font-bold">
                 </i>
               </div>
               <div class="test-dropdown-menu">
-                <div class="bg-white font-bold text-sm">Aws managed services</div>
-                <div @click="goToAuthentic" class="font-bold text-sm ">Authentic</div>
+                <div class="bg-white font-bold text-sm">
+                  Aws managed services
+                </div>
+                <div @click="goToAuthentic" class="font-bold text-sm">
+                  Authentic
+                </div>
                 <div class="test-daas-dropdown">
                   <div class="flex justify-between">
-                    <div @click="goToDaas" class="font-bold  ">
+                    <div @click="goToDaas" class="font-bold">
                       Device as a service
                     </div>
                     <div>
@@ -33,11 +42,11 @@
                     </div>
                   </div>
                   <div class="test-daas-dropdown-menu">
-                    <div @click="goToDaasEducation" class="font-bold text-sm ">
+                    <div @click="goToDaasEducation" class="font-bold text-sm">
                       The Shule Project
                     </div>
 
-                    <div @click="goToDaasBusiness" class="font-bold text-sm ">
+                    <div @click="goToDaasBusiness" class="font-bold text-sm">
                       Daas For Business
                     </div>
                   </div>
@@ -46,10 +55,9 @@
             </div>
           </li>
           <li class="navlink">
-            <router-link to="/" class="font-bold text-sm ">CONTACT US </router-link>
-          </li>
-          <li class="navlink">
-            <router-link to="/" class="font-bold text-sm ">ABOUT US </router-link>
+            <router-link to="/" class="font-bold text-sm"
+              >CONTACT US
+            </router-link>
           </li>
         </ul>
       </div>
@@ -58,7 +66,7 @@
 </template>
 <script>
 import { useRouter } from "vue-router";
-import { onMounted  } from "vue";
+import { onMounted } from "vue";
 export default {
   setup() {
     const router = useRouter();
@@ -74,11 +82,10 @@ export default {
     const goToDaas = () => {
       router.push({ name: "daas" });
     };
-    const toggleNavbarClass = () => {
-
-    }
-    onMounted(()=> {
-      toggleNavbarClass()    })
+    const toggleNavbarClass = () => {};
+    onMounted(() => {
+      toggleNavbarClass();
+    });
     return {
       goToDaasBusiness,
       goToDaasEducation,
@@ -90,8 +97,8 @@ export default {
 };
 </script>
 <style>
-*{
-  font-family: sans-serif;
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
   display: flex;
@@ -115,13 +122,13 @@ nav ul > li {
   padding-right: 25px;
   font-weight: 400;
   font-size: 17px;
-  font-style: normal;   
+  font-style: normal;
 }
 nav ul li i {
   font-size: 11px;
 }
 nav ul li:hover {
-  background-color: #1762E2
+  background-color: #1762e2;
 }
 .test-dropdown {
   position: relative;
@@ -187,7 +194,4 @@ nav ul li:hover {
 .navlink:hover {
   color: #fff;
 }
-
-
-
 </style>
