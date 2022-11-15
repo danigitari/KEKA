@@ -1,5 +1,6 @@
 <template>
 <navigation/>
+
 <Footer/>
 </template>
 <script>

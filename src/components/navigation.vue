@@ -1,20 +1,22 @@
 <template>
   <nav class="relative text-kekaBlue font-bold navbar">
-    <div class="w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between">
-      <span class="flex items-center justify-start ">
-        <div class="pl-20 ">
+    <div
+      class="flex w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between  md:flex-row lg:flex-row"
+    >
+      <span class="flex items-center justify-start">
+        <div class="pl-5 lg:pl-20">
           <img class="h-20 w-full" src="../assets/logo.jpeg" />
         </div>
         <!-- <div class="text-md  "> <p class=" text-lg" > KEKA </p>  PRECISION </div> -->
       </span>
 
-      <div class="hidden md:flex justify-end space-x-16 font-bold mr-20 pr-10">
+      <div class="hidden md:flex md:justify-end space-x-16 font-bold">
         <ul>
           <li class="navlink">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>
           </li>
           <li class="navlink">
-            <router-link to="/" class="font-bold text-sm"
+            <router-link to="about-us" class="font-bold text-sm"
               >ABOUT US
             </router-link>
           </li>
@@ -55,11 +57,24 @@
             </div>
           </li>
           <li class="navlink">
-            <router-link to="/" class="font-bold text-sm"
+            <router-link to="contact-us" class="font-bold text-sm"
               >CONTACT US
             </router-link>
           </li>
         </ul>
+      </div>
+      <div class="hambuger-menu">
+        <button class="block hambuger font-bold text-[18px] mr-10 md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div
+        class="lg:hidden sm:hidden xs:hidden md:hidden flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6"
+      >
+        <router-link to="/"> Home</router-link>
+        <router-link to="/"> About us </router-link>
+        <router-link to="/"> Services </router-link>
+        <router-link to="/"> Contact-us</router-link>
       </div>
     </div>
   </nav>
@@ -98,7 +113,7 @@ export default {
 </script>
 <style>
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
   display: flex;
@@ -193,5 +208,7 @@ nav ul li:hover {
 }
 .navlink:hover {
   color: #fff;
+}
+@media (max-width: 480px) {
 }
 </style>

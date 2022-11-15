@@ -22,9 +22,9 @@
         </div>
         <div class="lg:w-2/10  pt-10">
           <p class="text-white py-5 text-xl xs:px-10">SUPPORT</p>
-          <div class="py-2 text-gray-200 xs:px-10">About us</div>
-          <div class="py-2 text-gray-200 xs:px-10">Contact us</div>
-          <div class="py-2 text-gray-200 xs:px-10">Faq</div>
+          <router-link to="about-us" class="py-2 text-gray-200 xs:px-10 block">About us</router-link>
+          <router-link to="contact-us" class="py-2 text-gray-200 xs:px-10 block">Contact us</router-link>
+          <router-link to="faq" class="py-2 text-gray-200 xs:px-10">Faq</router-link>
         </div>
         <div class="lg:w-2/10 pt-10">
           <p class="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>

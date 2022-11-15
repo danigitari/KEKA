@@ -31,7 +31,8 @@
               </div>
             </div>
           </div>
-<Footer/></div>
+  <Footer/>
+</div>
 </template>
 <script>
 import navigation from "./navigation.vue";

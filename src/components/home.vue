@@ -1,6 +1,9 @@
 <template>
   <div class=" ">
-    <navigation />
+    <div class="nav">
+      <navigation/>
+    </div>
+  
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper hero-section">
@@ -263,11 +266,11 @@
         </div>
 
         <div class="flex flex-wrap mx-10">
-          <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
+          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
             <div>
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${elvis})` }"
                 ></div>
               </div>
@@ -280,11 +283,11 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
+          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${zippy})` }"
                 ></div>
               </div>
@@ -297,12 +300,12 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 lg:w-1/4 xs:w-full p-5 team">
+          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
-                  :style="{ backgroundImage: `url(${me})` }"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                  :style="{ backgroundImage: `url(${dan})` }"
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">DANIEL GITARI</p>
@@ -314,11 +317,11 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
+          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${ken})` }"
                 ></div>
               </div>
@@ -331,11 +334,11 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
+          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${sam})` }"
                 ></div>
               </div>
@@ -348,11 +351,11 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
+          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${ernest})` }"
                 ></div>
               </div>
@@ -365,11 +368,11 @@
               </div>
             </div>
           </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/4 p-5 team">
+          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${innocent})` }"
                 ></div>
               </div>
@@ -382,11 +385,11 @@
               </div>
             </div>
           </div>
-          <div class="lg:w-1/4 xs:w-full sm:w-1/2 p-5 team">
+          <div class="lg:w-1/3 xs:w-full sm:w-1/2 p-5 team">
             <div class="col-span-2 col-start-2">
               <div class="p-2 flex items-center justify-center">
                 <div
-                  class="w-36 h-36 rounded-full my-5"
+                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${florence})` }"
                 ></div>
               </div>
@@ -521,14 +524,15 @@ export default {
       require("../assets/Performance-user.jpg"),
     ];
     // team images
-    const ernest = require("../assets/ernest.jpeg");
-    const elvis = require("../assets/elvis.jpeg");
-    const ken = require("../assets/ken.jpeg");
+    const ernest = require("../assets/ernest2.jpg");
+    const elvis = require("../assets/elvis3.jpg");
+    const ken = require("../assets/ken2.jpg");
     const me = require("../assets/me.jpeg");
-    const zippy = require("../assets/zippy.jpeg");
-    const sam = require("../assets/sam.jpeg");
-    const florence = require("../assets/florence.jpeg");
-    const innocent = require("../assets/innocent.jpeg");
+    const dan = require("../assets/dan2.jpg");
+    const zippy = require("../assets/zippy2.jpg");
+    const sam = require("../assets/sam2.jpg");
+    const florence = require("../assets/florence2.jpg");
+    const innocent = require("../assets/innocent2.jpg");
 
     // partners images
     const vmware = require("../assets/vmware.png");
@@ -584,7 +588,7 @@ export default {
         mousewheel: true,
         keyboard: true,
         autoplay: {
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: true,
         },
         pagination: {
@@ -636,6 +640,7 @@ export default {
       ken,
       sam,
       me,
+      dan,
       innocent,
       zippy,
       elvis,
@@ -660,6 +665,9 @@ export default {
 };
 </script>
 <style scoped>
+.nav {
+    z-index: -1;
+}
 .swiper-button-next {
   opacity: 0;
   font-size: 10px;
@@ -683,6 +691,7 @@ export default {
 }
 .hero-section {
   height: 550px;
+
 }
 .section {
   z-index: 1;
@@ -772,23 +781,28 @@ export default {
   top: 60%;
   left: 43%;
 }
-.team-lead {
+/* .team-lead {
   height: 300px;
   width: 300px;
   background-repeat: no-repeat;
+} */
+.photos { 
+  background-position: top center;
+  background-size: cover;
 }
 .sticky {
   background-color: #fff;
   position: fixed;
   z-index: 10;
   width: 100%;
-  height: 80px;
+  /* height: 80px; */
   transition: all 0.5s ease;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 768px) {
   .sticky {
-    height: 100px !important;
+    /* height: 100px !important; */
+        
   }
   .services {
     width: 90% !important;
