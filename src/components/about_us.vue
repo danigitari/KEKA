@@ -64,7 +64,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ZIPPORAH WACHIRA</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -81,7 +81,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">DANIEL GITARI</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -98,7 +98,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
               <p class="text-sm text-center">Managing Director</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -115,7 +115,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">SAMUEL MUREKEFU</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -132,7 +132,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ERNEST OTIENO</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -149,7 +149,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">INNOCENT MAMBO</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -166,7 +166,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">FLORENCE SIMBA</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-blue">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
