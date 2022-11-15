@@ -165,7 +165,7 @@
           <div class="flex justify-start py-5">
             <button
               class="rounded-[20px] text-kekaBlue"
-              @click="scrollToServices"
+       
             >
               Learn More
             </button>
@@ -183,7 +183,7 @@
           <div class="flex justify-start py-5">
             <button
               class="rounded-[20px] text-kekaBlue"
-              @click="scrollToServices"
+              @click="goToDaasEducation"
             >
               Learn More
             </button>
@@ -201,7 +201,7 @@
           <div class="flex justify-start py-5">
             <button
               class="rounded-[20px] text-kekaBlue"
-              @click="scrollToServices"
+              @click="goToDaasBusiness"
             >
               Learn More
             </button>
@@ -220,7 +220,7 @@
           <div class="flex justify-start py-5">
             <button
               class="rounded-[20px] text-kekaBlue"
-              @click="scrollToServices"
+              @click="goToAuthentic"
             >
               Learn More
             </button>

@@ -248,7 +248,7 @@
       </div>
       <div class="flex justify-center flex-col  p-10">
         <p class="font-bold flex justify-center text-xl p-10"> Partnerships with Intel and VMWare make this possible </p> 
-          <p class="text-">
+          <p class="text-center">
             Please contact us for a detailed presentation. Devices range from as low as KES 37,800 with financing options of up to 36 months
           KEKA precision Technologies will facilitate financing either for the school or for the Parent/Student
           </p>
