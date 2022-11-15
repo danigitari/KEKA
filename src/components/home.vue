@@ -1,9 +1,9 @@
 <template>
   <div class=" ">
     <div class="nav">
-      <navigation/>
+      <navigation />
     </div>
-  
+
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper hero-section">
@@ -96,16 +96,15 @@
                 fleet, IT support, and device life-cycle management packaged
                 together in one subscription-based offering.
               </p>
-            <div class="text-center flex justify-start mx-5">
-              <button
-                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
-                @click="goToDaasEducation"
-              >
-                Learn More
-              </button>
+              <div class="text-center flex justify-start mx-5">
+                <button
+                  class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                  @click="goToDaasEducation"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
-            </div>
-
           </div>
         </div>
         <div class="swiper-slide relative">
@@ -115,30 +114,30 @@
             <img src="../assets/authentic_a.jpg" alt="" />
           </div>
           <div class="absolute hero mt-10 pt-10">
-          <div
+            <div
               class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
             >
               <p
                 class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
               >
-                  AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
+                AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
               </p>
 
-                          <p
+              <p
                 class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
               >
-      We create human friendly solutions protecting consumers , brands
-              and producers for quality consumption and revenue enhancement.
+                We create human friendly solutions protecting consumers , brands
+                and producers for quality consumption and revenue enhancement.
               </p>
-            <div class="text-center flex justify-start pl-5 ">
-              <button
-                class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
-                @click="goToAuthentic"
-              >
-                Learn More
-              </button>
-            </div>
+              <div class="text-center flex justify-start pl-5">
+                <button
+                  class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                  @click="goToAuthentic"
+                >
+                  Learn More
+                </button>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,18 +156,14 @@
         <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">Aws Managed services</h4>
           <p class="leading-relaxed mb-3 text-sm">
-            A proprietary print and recognition technology built for global
-            usage under challenging conditions, connected to value-added
-            services that protect your brand and intellectual property as a
-            manufacturer
+            We design and build secure, high-performance, resilient, and
+            efficient cloud infrastructure for a wide range of applications and
+            workloads. Premised on six pillars—operational excellence, security,
+            reliability, performance efficiency, cost optimization, and
+            sustainability
           </p>
           <div class="flex justify-start py-5">
-            <button
-              class="rounded-[20px] text-kekaBlue"
-       
-            >
-              Learn More
-            </button>
+            <button class="rounded-[20px] text-kekaBlue">Learn More</button>
           </div>
         </div>
         <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
@@ -218,10 +213,7 @@
             manufacturer
           </p>
           <div class="flex justify-start py-5">
-            <button
-              class="rounded-[20px] text-kekaBlue"
-              @click="goToAuthentic"
-            >
+            <button class="rounded-[20px] text-kekaBlue" @click="goToAuthentic">
               Learn More
             </button>
           </div>
@@ -248,7 +240,7 @@
 
           <div class="flex justify-center p-10">
             <router-link
-              to="daas_cooperate"
+              to="device-as-a-service-cooperate"
               class="p-2 call_to_action text-white border-white"
             >
               LEARN MORE
@@ -276,7 +268,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ELVIS MUNENE</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -293,7 +285,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ZIPPORAH WACHIRA</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -310,7 +302,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">DANIEL GITARI</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -327,7 +319,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
               <p class="text-sm text-center">Managing Director</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -344,7 +336,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">SAMUEL MUREKEFU</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -361,7 +353,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">ERNEST OTIENO</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -378,7 +370,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">INNOCENT MAMBO</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -395,7 +387,7 @@
               </div>
               <p class="text-md text-center font-bold py-5">FLORENCE SIMBA</p>
               <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue ">
+              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -666,7 +658,7 @@ export default {
 </script>
 <style scoped>
 .nav {
-    z-index: -1;
+  z-index: -1;
 }
 .swiper-button-next {
   opacity: 0;
@@ -691,7 +683,6 @@ export default {
 }
 .hero-section {
   height: 550px;
-
 }
 .section {
   z-index: 1;
@@ -786,7 +777,7 @@ export default {
   width: 300px;
   background-repeat: no-repeat;
 } */
-.photos { 
+.photos {
   background-position: top center;
   background-size: cover;
 }
@@ -802,7 +793,6 @@ export default {
 @media (max-width: 768px) {
   .sticky {
     /* height: 100px !important; */
-        
   }
   .services {
     width: 90% !important;
