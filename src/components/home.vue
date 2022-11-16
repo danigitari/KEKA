@@ -238,10 +238,10 @@
           costs. Both deployment and support ticket resolution times also
           improve.
 
-          <div class="flex justify-center p-10">
+          <div class="flex justify-center p-10 ">
             <router-link
               to="device-as-a-service-cooperate"
-              class="p-2 call_to_action text-white border-white"
+              class="p-2 call_to_action text-white rounded-[20px] border-white"
             >
               LEARN MORE
             </router-link>
@@ -790,6 +790,7 @@ export default {
   transition: all 0.5s ease;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
 }
+
 @media (max-width: 768px) {
   .sticky {
     /* height: 100px !important; */

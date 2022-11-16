@@ -28,15 +28,15 @@
                 </i>
               </div>
               <div class="test-dropdown-menu">
-                <div class="bg-white font-bold text-sm">
+                <div class="bg-white  text-sm">
                   Aws managed services
                 </div>
-                <div @click="goToAuthentic" class="font-bold text-sm">
+                <div @click="goToAuthentic" class="text-sm">
                   Authentic
                 </div>
                 <div class="test-daas-dropdown">
                   <div class="flex justify-between">
-                    <div @click="goToDaas" class="font-bold">
+                    <div @click="goToDaas" class="">
                       Device as a service
                     </div>
                     <div>
@@ -44,11 +44,11 @@
                     </div>
                   </div>
                   <div class="test-daas-dropdown-menu">
-                    <div @click="goToDaasEducation" class="font-bold text-sm">
+                    <div @click="goToDaasEducation" class=" text-sm">
                       The Shule Project
                     </div>
 
-                    <div @click="goToDaasBusiness" class="font-bold text-sm">
+                    <div @click="goToDaasBusiness" class=" text-sm">
                       Daas For Business
                     </div>
                   </div>

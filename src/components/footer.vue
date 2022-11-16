@@ -7,9 +7,9 @@
             KEKA PRECISION TECHNOLOGIES LIMITED
           </p>
           <div class="flex justify-left pt-10 px-10 gap-3 py-5 text-white text-[20px]">
-            <i class="fa-brands fa-facebook  "></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook icons "></i>
+            <i class="fa-brands fa-twitter icons "></i>
+            <i class="fa-brands fa-linkedin icons "></i>
           </div>
         </div>
         <div class="lg:w-2/10 pt-10">
@@ -56,6 +56,11 @@
 // }
  </script>
 <style>
-
+.icons{
+  transition: all .3s ease-in;
+}
+.icons:hover{
+  transform: scale(1.4);
+}
 
 </style>
