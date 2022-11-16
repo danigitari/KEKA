@@ -95,4 +95,5 @@ export default {
 .section {
   background-position: right;
 }
+.card {  }
 </style>
