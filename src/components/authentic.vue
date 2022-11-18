@@ -7,10 +7,10 @@
         :style="{ backgroundImage: `url(${slide})` }"
       >
         <div class="pt-10">
-          <div class="flex justify-center text-4xl text-white font-bold pb-10">
+          <div class="flex justify-center text-4xl text-white font-bold pb-10 pl-10">
             AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
           </div>
-          <div class="flex justify-center text-white text-xl">
+          <div class="flex justify-center text-white text-xl pl-10">
             We create human friendly solutions protecting consumers , brands and
             producers for quality consumption and revenue enhancement.
           </div>
@@ -62,7 +62,7 @@
         <div class="sm:w-full xs:w-full lg:w-1/2 my-5 px-10 text-center">
           <img
             src="../assets/authentic_c.jpg"
-            class="h-96 flex items-center"
+            class="md:pl-10 h-96 flex items-center"
             alt=""
           />
         </div>

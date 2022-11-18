@@ -14,7 +14,7 @@
         </div>
         <div class="lg:w-2/10 pt-10">
           <p class="text-white py-5 text-xl xs:px-10">SERVICES</p>
-          <router-link to="/"> <div class="py-2 text-gray-200 xs:px-10">Home</div></router-link>
+          <!-- <router-link to="/"> <div class="py-2 text-gray-200 xs:px-10">Home</div></router-link> -->
           <router-link to="authentic-anti-counterfeit-solutions"> <div class="py-2 text-gray-200 xs:px-10">  Authentic  </div> </router-link>
           <router-link to="aws-managed-services"> <div class="py-2 text-gray-200 xs:px-10">Aws managed sevices</div></router-link>
           <router-link to="the-shule-project"> <div class="py-2 text-gray-200 xs:px-10">The shule project</div></router-link>
@@ -24,7 +24,7 @@
           <p class="text-white py-5 text-xl xs:px-10">SUPPORT</p>
           <router-link to="about-us" class="py-2 text-gray-200 xs:px-10 block">About us</router-link>
           <router-link to="contact-us" class="py-2 text-gray-200 xs:px-10 block">Contact us</router-link>
-          <router-link to="faq" class="py-2 text-gray-200 xs:px-10">Faq</router-link>
+          <router-link to="faq" class="py-2 text-gray-200 xs:px-10 block">Faq</router-link>
         </div>
         <div class="lg:w-2/10 pt-10">
           <p class="text-white py-5 text-xl xs:px-10">GET IN TOUCH</p>

@@ -10,7 +10,7 @@
         <!-- <div class="text-md  "> <p class=" text-lg" > KEKA </p>  PRECISION </div> -->
       </span>
 
-      <div class="hidden md:flex md:justify-end space-x-16 font-bold">
+      <div class="hidden md:flex md:justify-end space-x-16 ">
         <ul>
           <li class="navlink">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>

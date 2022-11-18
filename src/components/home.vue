@@ -689,7 +689,7 @@ export default {
 }
 .services {
   transition: transform 0.2s ease-in;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .services:hover {
   transform: scale(1.05);
