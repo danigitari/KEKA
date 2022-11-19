@@ -1,5 +1,8 @@
 <template>
 <navigation/>
+<div class="contact_us">
+  
+</div>
 <Footer/>
 </template>
 <script>
