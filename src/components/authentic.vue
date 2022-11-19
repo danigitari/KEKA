@@ -7,6 +7,7 @@
         :style="{ backgroundImage: `url(${slide})` }"
       >
         <div class="pt-10">
+          
           <div class="flex justify-center text-4xl text-white font-bold pb-10 pl-10">
             AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
           </div>
