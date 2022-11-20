@@ -1,6 +1,6 @@
 <template>
   <navigation />
-  <div class="contact_us">
+  <div class="contact_us ">
     <div
       class="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-100"
     >
@@ -64,7 +64,7 @@
       >
         <div class="mx-10 ml-5">
           <div class="grid grid-rows-4">
-            <div class="row-span-1 flex shrink h-2/5">
+            <div class="row-span-1 flex shrink ">
               <img
                 src="https://web.archive.org/web/20220704075849im_/https://www.kekaprecision.com/wp-content/uploads/2022/04/cropped-KEKA-Logo.jpeg"
                 alt=""
@@ -88,3 +88,8 @@ export default {
   setup() {},
 };
 </script>
+<style>
+.contact_us {
+  height: 100vh !important;
+}
+</style>
