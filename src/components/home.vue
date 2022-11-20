@@ -238,10 +238,10 @@
           costs. Both deployment and support ticket resolution times also
           improve.
 
-          <div class="flex justify-center p-10 ">
+          <div class="flex justify-center p-10 p-2 ">
             <router-link
               to="device-as-a-service-cooperate"
-              class="p-2 call_to_action text-white rounded-[20px] border-white"
+              class="py-3 px-5 call_to_action1 text-white rounded-[30px] border-white"
             >
               LEARN MORE
             </router-link>
@@ -482,7 +482,7 @@
       </div>
       <div class="flex justify-center">
         <button
-          class="py-2 px-3 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
+          class="py-2 px-6 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
         >
           <a href="mailto:info@kekaprecision.com"> Book a consultation </a>
         </button>
@@ -714,6 +714,15 @@ export default {
 } */
 .call_to_action {
   transition: transform 0.3s ease;
+}
+.call_to_action1{
+  transition: transform 0.3s ease;
+  border: 2px solid rgb(255, 255, 255) !important;
+  z-index: 11;
+}
+.call_to_action1:hover {
+  transform: scale(1.1);
+  /* background-color: #ec1b35; */
 }
 .call_to_action:hover {
   transform: scale(1.1);
