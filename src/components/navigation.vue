@@ -88,6 +88,8 @@ export default {
     const goToDaasBusiness = () => {
       router.push({ name: "daas_cooperate" });
     };
+
+    
     const goToDaasEducation = () => {
       router.push({ name: "theShuleProject" });
     };
