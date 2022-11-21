@@ -1,7 +1,7 @@
 <template>
   <nav class="relative text-kekaBlue font-bold navbar">
     <div
-      class="flex w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between  md:flex-row lg:flex-row"
+      class="flex w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between md:flex-row lg:flex-row"
     >
       <span class="flex items-center justify-start">
         <div class="pl-5 lg:pl-20">
@@ -10,7 +10,7 @@
         <!-- <div class="text-md  "> <p class=" text-lg" > KEKA </p>  PRECISION </div> -->
       </span>
 
-      <div class="hidden md:flex md:justify-end space-x-16 ">
+      <div class="hidden md:flex md:justify-end space-x-16">
         <ul>
           <li class="navlink" @click.prevent="goToHome">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>
@@ -28,27 +28,21 @@
                 </i>
               </div>
               <div class="test-dropdown-menu">
-                <div class="bg-white  text-sm">
-                  Aws managed services
-                </div>
-                <div @click="goToAuthentic" class="text-sm">
-                  Authentic
-                </div>
+                <div class="bg-white text-sm">Aws managed services</div>
+                <div @click="goToAuthentic" class="text-sm">Authentic</div>
                 <div class="test-daas-dropdown">
                   <div class="flex justify-between">
-                    <div @click="goToDaas" class="">
-                      Device as a service
-                    </div>
+                    <div @click="goToDaas" class="">Device as a service</div>
                     <div>
                       <i class="fa-sharp fa-solid fa-chevron-right"> </i>
                     </div>
                   </div>
                   <div class="test-daas-dropdown-menu">
-                    <div @click="goToDaasEducation" class=" text-sm">
+                    <div @click="goToDaasEducation" class="text-sm">
                       The Shule Project
                     </div>
 
-                    <div @click="goToDaasBusiness" class=" text-sm">
+                    <div @click="goToDaasBusiness" class="text-sm">
                       Daas For Business
                     </div>
                   </div>
@@ -89,10 +83,10 @@ export default {
       router.push({ name: "daas_cooperate" });
     };
 
-    
     const goToDaasEducation = () => {
       router.push({ name: "theShuleProject" });
     };
+
     const goToAuthentic = () => {
       router.push({ name: "authentic" });
     };
