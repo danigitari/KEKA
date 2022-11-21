@@ -12,7 +12,7 @@
 
       <div class="hidden md:flex md:justify-end space-x-16 ">
         <ul>
-          <li class="navlink">
+          <li class="navlink" @click.prevent="goToHome">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>
           </li>
           <li class="navlink">
@@ -97,6 +97,9 @@ export default {
     const goToDaas = () => {
       router.push({ name: "daas" });
     };
+    const goToHome = () => {
+      router.push({ name: "home" });
+    };
     const toggleNavbarClass = () => {};
     onMounted(() => {
       toggleNavbarClass();
@@ -106,6 +109,7 @@ export default {
       goToDaasEducation,
       goToAuthentic,
       goToDaas,
+      goToHome,
       toggleNavbarClass,
     };
   },

@@ -241,7 +241,7 @@
           <div class="flex justify-center p-10 p-2 ">
             <router-link
               to="device-as-a-service-cooperate"
-              class="py-3 px-5 call_to_action1 text-white rounded-[30px] border-white"
+              class="py-3 px-8 call_to_action1 text-white rounded-[30px] border-white"
             >
               LEARN MORE
             </router-link>
@@ -399,10 +399,10 @@
       <div class="mt-20 mb-5 flex justify-center bg-gray-100">
         <p class="text-2xl font-bold m-10 text-dark">OUR PARTNERS</p>
       </div>
-      <div class="mx-10 bg-white">
-        <div class="swiper mySwiper1">
+      <div class="mx-10 ">
+        <div class="swiper mySwiper1 ">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide bg-white">
               <div
                 class="p-2 w-64 h-36 partner bg-white"
                 :style="{ backgroundImage: `url(${acer})` }"
