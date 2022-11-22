@@ -53,7 +53,7 @@
       this document. This gives you freedom of choice on brand while benfiting
       from our DaaS. 
     </div>
-    <div class="lg:flex md:flex justify-center">
+    <div class="lg:flex md:flex justify-center mb-10">
       <div class="p-5 flex flex-col card sm:w-full  md:w-1/2 lg:w-1/4">
         <div class="text-3xl text-kekaBlue  flex  justify-center">57%</div>
         <div class="p-3 text-center">of SMBs plan to increase their budget to equip work-from-home employees 1*</div>
@@ -71,6 +71,9 @@
         <div class="text-3xl text-kekaBlue  flex  justify-center"> 46%</div>
         <div class="p-3 text-center"> of employees say their software is frequently malfunctioning and disrupting their work 4*</div>
       </div>
+    </div>
+    <div  class="flex flex-col items-center justify-center p-10 bg-blue-500 text-white text-center lg:pr-20 lg:pl-20 mb-10" >
+      Streamline workplace technology management and get our enhanced support by bundling tech service, hardware, and software with Device as a Service (DaaS) featuring the Intel vPro® platform. Advantages of Device as a Service (DaaS) DaaS is a flexible option that improves business agility and helps free up resources between enterprise IT departments, end user workforces, and decision-makers when used as part of a larger digital transformation strategy. Businesses of all sizes can benefit from device life-cycle management, PC configurations tailored to specific employee needs, and fast asset recovery to reduce downtime.
     </div>
     <Footer />
   </div>
@@ -96,6 +99,6 @@ export default {
   background-position: right;
 }
 .card { 
-  
+
  }
 </style>

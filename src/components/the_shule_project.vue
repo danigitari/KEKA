@@ -60,12 +60,12 @@
           </button>
         </div>
       </div>
-      <div class=" ">
-        <p class="text-2xl font-bold m-10 text-dark flex justify-center">
+      <div class=" bg-white ">
+        <p class="text-2xl font-bold p-10 text-dark flex justify-center">
           Challenges facing schools in ICT
         </p>
       </div>
-      <div class="flex flex-wrap justify-center mb-10">
+      <div class="flex flex-wrap justify-center pb-10 bg-white">
         <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">
             Affordable access to Devices
@@ -143,7 +143,7 @@
             devices sitting in a closet when enrollments change year after year.
           </p>
         </div>
-        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 text-center">
+        <div class="sm:w-full xs:w-full lg:w-1/2 text-center">
           <p class="text-xl lg:mx-20 lg:my-10 text-left font-bold">
             Students' Development
           </p>
@@ -275,7 +275,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .section {
   height: 500px;
   background-position: left;
@@ -313,5 +313,12 @@ export default {
   width: 100%;
   height: 100%;
   background: #000;
+}
+.services {
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.services:hover {
+  transform: scale(1.05);
 }
 </style>
