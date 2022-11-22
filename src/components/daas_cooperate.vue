@@ -53,21 +53,21 @@
       this document. This gives you freedom of choice on brand while benfiting
       from our DaaS. 
     </div>
-    <div class="flex  justify-center">
-      <div class="p-3 card w-1/4 flex flex-col">
+    <div class="lg:flex md:flex justify-center">
+      <div class="p-5 flex flex-col card sm:w-full  md:w-1/2 lg:w-1/4">
         <div class="text-3xl text-kekaBlue  flex  justify-center">57%</div>
         <div class="p-3 text-center">of SMBs plan to increase their budget to equip work-from-home employees 1*</div>
       </div>
-      <div class="p-3 card w-1/4 flex flex-col">
+      <div class="p-5 flex flex-col card w-full  md:w-1/2 lg:w-1/4">
         <div class="text-3xl text-kekaBlue  flex  justify-center">43%</div>
-        <div class="p-3 text-center">of data breaches now
-affect SMBs 2* </div>
+        <div class="p-3 text-center">of data breaches now affect SMBs 2* </div>
+
       </div>
-      <div class="p-3 card w-1/4 flex flex-col">
+      <div class="p-5 flex flex-col card w-full  md:w-1/2 lg:w-1/4">
         <div class="text-3xl text-kekaBlue  flex  justify-center"> 60%</div>
         <div class="p-3 text-center">of SMBs who accelerated their tech investments during the pandemic did so to improve business agility 3*</div>
       </div>
-      <div class="p-3 card w-1/4 flex flex-col">
+      <div class="p-5 flex flex-col card w-full  md:w-1/2 lg:w-1/4">
         <div class="text-3xl text-kekaBlue  flex  justify-center"> 46%</div>
         <div class="p-3 text-center"> of employees say their software is frequently malfunctioning and disrupting their work 4*</div>
       </div>
@@ -95,5 +95,7 @@ export default {
 .section {
   background-position: right;
 }
-.card {  }
+.card { 
+  
+ }
 </style>

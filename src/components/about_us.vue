@@ -180,6 +180,7 @@
 <script>
 import navigation from "./navigation.vue";
 import Footer from "./footer.vue";
+import { onMounted } from 'vue'
 export default {
   components:{
     navigation,
@@ -196,6 +197,12 @@ export default {
     const sam = require("../assets/sam2.jpg");
     const florence = require("../assets/florence2.jpg");
     const innocent = require("../assets/innocent2.jpg");
+    const scrollToTop = () => {
+      window.scrollY = 0;
+    }
+    onMounted(()=> {
+      scrollToTop()
+    })
     return {
       slide,
       ken,
@@ -207,6 +214,7 @@ export default {
       elvis,
       florence,
       ernest,
+      scrollToTop,
 
     }
     

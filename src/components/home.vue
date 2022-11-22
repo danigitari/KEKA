@@ -238,7 +238,7 @@
           costs. Both deployment and support ticket resolution times also
           improve.
 
-          <div class="flex justify-center p-10 p-2 ">
+          <div class="flex justify-center p-10 p-2">
             <router-link
               to="device-as-a-service-cooperate"
               class="py-3 px-8 call_to_action1 text-white rounded-[30px] border-white"
@@ -256,7 +256,7 @@
           The team are professional cloud architects certified by AWS, VMWare
           and Intel on various cloud and device services
         </div>
-
+        <!-- 
         <div class="flex flex-wrap mx-10">
           <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
             <div>
@@ -394,13 +394,58 @@
               </div>
             </div>
           </div>
+        </div> -->
+
+        <div class="flex">
+          <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+            <div>
+              <div class="p-2 flex items-center justify-center">
+                <div
+                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                  :style="{ backgroundImage: `url(${ken})` }"
+                ></div>
+              </div>
+              <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
+              <p class="text-sm text-center">MANAGING DIRECTOR</p>
+              <div class="flex justify-center py-5 text-kekaBlue">
+                <!-- <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i> -->
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+            <div>
+              <div class="p-2 flex items-center justify-center">
+                <div
+                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                  :style="{ backgroundImage: `url(${eva})` }"
+                ></div>
+              </div>
+              <p class="text-md text-center font-bold py-5">EVA</p>
+              <p class="text-sm text-center">SALES DIRECTOR</p>
+              <div class="flex justify-center py-5 text-kekaBlue">
+                <!-- <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i> -->
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="py-2 px-6 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
+            @click.prevent="goToAbout"
+          >
+            LEARN MORE
+          </button>
         </div>
       </div>
       <div class="mt-20 mb-5 flex justify-center bg-gray-100">
         <p class="text-2xl font-bold m-10 text-dark">OUR PARTNERS</p>
       </div>
-      <div class="mx-10 ">
-        <div class="swiper mySwiper1 ">
+      <div class="mx-10">
+        <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide bg-white">
               <div
@@ -525,6 +570,7 @@ export default {
     const sam = require("../assets/sam2.jpg");
     const florence = require("../assets/florence2.jpg");
     const innocent = require("../assets/innocent2.jpg");
+    const eva = require("../assets/eva1.jpg");
 
     // partners images
     const vmware = require("../assets/vmware.png");
@@ -602,6 +648,9 @@ export default {
     const goToAuthentic = () => {
       router.push({ name: "authentic" });
     };
+        const goToAbout = () => {
+      router.push({ name: "about-us" });
+    };
     const scrollToServices = () => {
       let element = document.querySelector(".service");
       console.log(element);
@@ -626,6 +675,7 @@ export default {
       goToDaasBusiness,
       goToDaasEducation,
       goToAuthentic,
+      goToAbout,
       visibleSlide,
       swipeHeroSection,
       backgroundimage,
@@ -638,6 +688,7 @@ export default {
       elvis,
       florence,
       ernest,
+      eva,
       slides,
       getStarted,
       swipe,
@@ -687,6 +738,9 @@ export default {
 .section {
   z-index: 1;
 }
+.linkedin-icon {
+  transform: scale(1.5);
+}
 .services {
   transition: transform 0.2s ease-in;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -715,7 +769,7 @@ export default {
 .call_to_action {
   transition: transform 0.3s ease;
 }
-.call_to_action1{
+.call_to_action1 {
   transition: transform 0.3s ease;
   border: 2px solid rgb(255, 255, 255) !important;
   z-index: 11;

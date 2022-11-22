@@ -1,80 +1,100 @@
 <template>
   <navigation />
-  <div class="contact_us ">
-    <div
-      class="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-100"
-    >
-      <div class="col-span-1 py-20 px-5">
-        <div class="grid grid-cols-9">
-          <div class="col-span-9 m-5">
-            <div class="py-2">
-              <span class="text-xl"> Register a new account </span>
-            </div>
-            <div class="mr-10 xl:mr-20">
-              <div class="grid grid-rows-4">
-                <div class="row-span-1 py-2">
-                  <div class="py-2">
-                    <input
-                      type="text"
-                      id="first_name"
-                      placeholder="First name"
-                      class="form-control w-full py-2 px-2 text-green-darker rounded border-solid shadow-md"
-                    />
-                  </div>
-                  <div class="py-2">
-                    <input
-                      type="text"
-                      id="last_name"
-                      placeholder="Last name"
-                      class="form-control w-full py-2 px-2 text-green-darker rounded border-solid shadow-md"
-                    />
-                  </div>
-                  <div class="py-2">
-                    <input
-                      type="text"
-                      id="email"
-                      placeholder="Email"
-                      class="form-control w-full py-2 px-2 text-green-darker rounded border-solid shadow-md"
-                    />
-                  </div>
-                  <div class="py-2">
-                    <input
-                      type="text"
-                      id="password"
-                      placeholder="Password"
-                      class="form-control w-full py-2 px-2 text-green-darker rounded border-solid shadow-md"
-                    />
-                  </div>
-                  <div class="py-2">
-                    <button
-                      @click.prevent=""
-                      class="btn-primary rounded-lg shadow-md bg-[#1762E2] p-3"
-                    >
-                      <span class="text-white"> Sign up</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="contact_us bg-gray-100">
+
+    <div class="heading bg-kekaBlue pl-10 text-white lg:pl-20  py-10 text-xl font-bold">
+      CONTACT US
+    </div>
+  <div class="form  p-5">
+    <div class="form-heading font-bold flex justify-center pt-20 py-5">
+      AUTHENTIC ANTI-COUNTERFEIT SERVICE APPLICATION FORM 
+
+    </div>
+    <div class="flex  flex-col justify-center lg:mx-20 lg:px-20">
+      <div class="name flex flex-col gap-2 py-3">
+        <label for=""> Name <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
       </div>
-      <div
-        class="md:col-span-1 md:bg-[#1762E2] xl:col-span-1 lg:col-span-1 lg:bg-[#1762E2] xl:bg-[#1762E2]"
-      >
-        <div class="mx-10 ml-5">
-          <div class="grid grid-rows-4">
-            <div class="row-span-1 flex shrink ">
-              <img
-                src="https://web.archive.org/web/20220704075849im_/https://www.kekaprecision.com/wp-content/uploads/2022/04/cropped-KEKA-Logo.jpeg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+      <div class="company  flex flex-col gap-2 py-3">
+        <label for=""> Company  <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
+      </div>
+      <div class="Phone  flex flex-col gap-2 py-3">
+        <label for=""> Phone Number  <span class="text-red-500"> * </span> </label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="Email  flex flex-col gap-2 py-3">
+        <label for=""> Email Address <span class="text-red-500"> * </span></label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="self-end bg-kekaBlue text-white py-3 px-6 rounded-[25px] mb-10 ">
+        Submit
       </div>
     </div>
   </div>
+    <div class="form  p-5">
+    <div class="form-heading font-bold flex justify-center pt-20 py-5">
+      DEVICE AS A SERVICE FOR SCHOOLS
+
+    </div>
+    <div class="flex  flex-col justify-center lg:mx-20 lg:px-20">
+      <div class="name flex flex-col gap-2 py-3">
+        <label for=""> Name <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
+      </div>
+      <div class="company  flex flex-col gap-2 py-3">
+        <label for=""> School   <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
+      </div>
+      <div class="Phone  flex flex-col gap-2 py-3">
+        <label for=""> Phone Number  <span class="text-red-500"> * </span> </label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="Email  flex flex-col gap-2 py-3">
+        <label for=""> Email Address <span class="text-red-500"> * </span></label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+        <div class="Email  flex flex-col gap-2 py-3">
+        <label for=""> Number of devices <span class="text-red-500"> * </span></label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="self-end bg-kekaBlue text-white py-3 px-6 rounded-[25px] mb-10 ">
+        Submit
+      </div>
+    </div>
+  </div>
+    <div class="form  p-5">
+    <div class="form-heading font-bold flex justify-center pt-20 py-5">
+      DEVICE AS A SERVICE COOPERATE
+
+    </div>
+    <div class="flex  flex-col justify-center lg:mx-20 lg:px-20">
+      <div class="name flex flex-col gap-2 py-3">
+        <label for=""> Name <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
+      </div>
+      <div class="company  flex flex-col gap-2 py-3">
+        <label for=""> Company  <span class="text-red-500"> * </span> </label>
+        <input type="text"  class="form-control w-full py-2  px-2 text-green-darker rounded border-solid bg- shadow-md"/>
+      </div>
+      <div class="Phone  flex flex-col gap-2 py-3">
+        <label for=""> Phone Number  <span class="text-red-500"> * </span> </label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="Email  flex flex-col gap-2 py-3">
+        <label for=""> Email Address <span class="text-red-500"> * </span></label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+              <div class="Email  flex flex-col gap-2 py-3">
+        <label for=""> Number of devices <span class="text-red-500"> * </span></label>
+        <input type="text" class="form-control w-full py-2  px-2 text-green-darker rounded border-solid shadow-md"/>
+      </div>
+      <div class="self-end bg-kekaBlue text-white py-3 px-6 rounded-[25px] mb-10 ">
+        Submit
+      </div>
+    </div>
+  </div>
+    </div>
   <Footer />
 </template>
 <script>
@@ -89,7 +109,5 @@ export default {
 };
 </script>
 <style>
-.contact_us {
-  height: 100vh !important;
-}
+
 </style>
