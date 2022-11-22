@@ -57,21 +57,25 @@
           </li>
         </ul>
       </div>
-      <div class="hambuger-menu">
-        <button class="block hambuger font-bold text-[18px] mr-10 md:hidden">
+      <div class="hambuger-menu" @click.prevent="showHambugerMenu">
+        <button class="block font-bold text-[18px] mr-10 md:hidden">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-      <div
-        class="lg:hidden sm:hidden xs:hidden md:hidden flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6"
-      >
-        <router-link to="/"> Home</router-link>
-        <router-link to="/"> About us </router-link>
-        <router-link to="/"> Services </router-link>
-        <router-link to="/"> Contact-us</router-link>
+    </div>
+
+  </nav>
+      <div class="hidden hambuger block">
+      <div class="flex flex-col  text-kekaBlue" >
+        <div class="w-full flex justify-center items-center" @click.prevent="goToHome">Home</div> 
+        <div class="w-full flex justify-center items-center " @click.prevent="goToAbout"> About us</div> 
+        <div class="w-full flex justify-center items-center" @click.prevent="goToAuthentic"> Authentic </div>
+        <div class="w-full flex justify-center items-center" @click.prevent="goToDaasEducation"> The shule project  </div>
+        <div class="w-full flex justify-center items-center" @click.prevent="goToDaasBusiness"> Daas cooperate </div>
+        <div class="w-full flex justify-center items-center" @click.prevent=""> Aws managed services </div>
+        <div class="w-full flex justify-center items-center" @click.prevent="goToContact"> Contact-us</div> 
       </div>
     </div>
-  </nav>
 </template>
 <script>
 import { useRouter } from "vue-router";
@@ -96,7 +100,18 @@ export default {
     const goToHome = () => {
       router.push({ name: "home" });
     };
+    const goToAbout = () => {
+      router.push({ name: "about-us" });
+    };
+        const goToAws = () => {
+      router.push({ name: "aws " });
+    };
+
     const toggleNavbarClass = () => {};
+    const showHambugerMenu = () => {
+      const navbar = document.querySelector(".hambuger");
+      navbar.classList.toggle("hambuger-menu-dropdown");
+    };
     onMounted(() => {
       toggleNavbarClass();
     });
@@ -107,6 +122,10 @@ export default {
       goToDaas,
       goToHome,
       toggleNavbarClass,
+      showHambugerMenu,
+      goToAbout,
+      goToAws,
+
     };
   },
 };
@@ -208,6 +227,24 @@ nav ul li:hover {
 }
 .navlink:hover {
   color: #fff;
+}
+.hambuger-menu-dropdown {
+  display: block !important;
+  
+  font-size: 16px;
+  transition: 0.4s ease-in;
+}
+.hambuger-menu-dropdown > div > div {
+  border-bottom: 1px solid gray;
+  font-size: 16px;
+  transition: 0.2s ease-in;
+  padding: 20px;
+
+}
+.hambuger-menu-dropdown > div > div:hover {
+background-color: #1762e2;
+color: #fff;
+
 }
 @media (max-width: 480px) {
 }

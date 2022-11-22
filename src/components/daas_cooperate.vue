@@ -8,14 +8,14 @@
         :style="{ backgroundImage: `url(${slide})` }"
       >
         <div class="">
-          <div class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:px-10 absolute">
+          <div class="text-white md:ml-10 lg:ml-10 md:pl-10 px-10 absolute">
             <p
-              class="mt-10 mb-10 pt-10 font-bold text-3xl text-white flex justify-right text-left align-content-start"
+              class="mt-10 mb-10 pt-10 px-10font-bold text-3xl text-white flex justify-right text-left align-content-start"
             >
-              DEVICE AS A SERVICE FOR BUSINESS
+               DEVICE AS A SERVICE FOR BUSINESS
             </p>
             <p
-              class="mb-10 font-bold text-lg text-white flex justify-left text-left lg:w-2/5"
+              class="mb-10 font-bold text-lg text-white flex justify-left text-left  lg:w-2/5"
             >
               Device as a Service (DaaS) equips businesses with a full PC fleet,
               IT support, and device life-cycle management packaged together in

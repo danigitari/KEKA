@@ -5,12 +5,12 @@
       <div class="relative">
         <div class="overlay"></div>
         <div
-          class="bg-cover object-fit pt-10 pb-20 section"
+          class="bg-cover object-fit pt-5 pb-20 section"
           :style="{ backgroundImage: `url(${slide})` }"
         >
           <div class="">
             <div
-              class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:px-10 absolute"
+              class="text-white md:ml-10 lg:ml-10 md:pl-10 px-10 absolute "
             >
               <p
                 class="mt-10 mb-10 pt-10 font-bold text-3xl text-white flex justify-right text-left align-content-start"
@@ -66,7 +66,7 @@
         </p>
       </div>
       <div class="flex flex-wrap justify-center pb-10 bg-white">
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full  lg:w-1/4  justify-center mr-5 p-5 rounded-[10px] services ">
           <h4 class="text-kekaBlue font-bold py-5">
             Affordable access to Devices
           </h4>
@@ -81,7 +81,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">
             Management and Deployment
           </h4>
@@ -97,7 +97,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">Training</h4>
           <p class="leading-relaxed mb-3 text-sm">
             Trained Staff including the cost of training. Improving the student
@@ -111,7 +111,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">Technical Sustainability</h4>
           <p class="leading-relaxed mb-3 text-sm">
             ICT sustainability for the long term. This includes device refresh,
@@ -128,7 +128,7 @@
       </div>
       <div class="flex flex-wrap bg-white pt-5 py-5">
         <div class="sm:w-full xs:w-full lg:w-1/2">
-          <p class="text-xl lg:mx-20 lg:my-10 text-left font-bold">
+          <p class="text-xl lg:mx-20 md:mx-10 mx-10 lg:my-10 text-left font-bold">
             Change Adaptation
           </p>
           <p
@@ -144,7 +144,7 @@
           </p>
         </div>
         <div class="sm:w-full xs:w-full lg:w-1/2 text-center">
-          <p class="text-xl lg:mx-20 lg:my-10 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Students' Development
           </p>
           <p
@@ -164,7 +164,7 @@
       </div>
       <div class="flex flex-wrap bg-white pt-5 pb-5">
         <div class="sm:w-full xs:w-full lg:w-1/2 my-5 text-center">
-          <p class="text-xl my-10 lg:mx-20 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Providing Personalized Education
           </p>
           <p
@@ -177,7 +177,7 @@
           </p>
         </div>
         <div class="sm:w-full xs:w-full lg:w-1/2">
-          <p class="text-xl my-10 lg:mx-20 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Obtaining the Required Devices
           </p>
           <p
@@ -195,7 +195,7 @@
       </div>
       <div class="flex flex-wrap bg-white pt-5 py-5">
         <div class="sm:w-full xs:w-full lg:w-1/2">
-          <p class="text-xl my-10 lg:mx-20 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Deployment and Management
           </p>
           <p
@@ -212,7 +212,7 @@
           </p>
         </div>
         <div class="sm:w-full xs:w-full lg:w-1/2 my-5 text-center">
-          <p class="text-xl my-10 lg:mx-20 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Empower IT to Focus on Strategic Projects
           </p>
           <p
@@ -228,7 +228,7 @@
           </p>
         </div>
         <div class="sm:w-full xs:w-full lg:w-1/2 my-5 text-center">
-          <p class="text-xl my-10 lg:mx-20 text-left font-bold">
+          <p class="text-xl lg:mx-20 lg:my-10 md:mx-10 mx-10 text-left font-bold">
             Disposal of Equipment
           </p>
           <p
