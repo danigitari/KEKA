@@ -2,6 +2,7 @@
   <div class=" ">
     <div class="nav">
       <navigation />
+      
     </div>
 
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
@@ -31,14 +32,14 @@
                   financial and performance predictivity on a subscription basis
                   .
                 </p>
-                <div class="text-center flex justify-start mx-5">
+                <!-- <div class="text-center flex justify-start mx-5">
                   <button
                     class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
                     @click="scrollToServices"
                   >
                     Learn More
                   </button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
