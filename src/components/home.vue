@@ -2,7 +2,6 @@
   <div class=" ">
     <div class="nav">
       <navigation />
-      
     </div>
 
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
@@ -397,42 +396,41 @@
           </div>
         </div> -->
 
-        
-          <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
-            <div>
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${ken})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
-              <p class="text-sm text-center">MANAGING DIRECTOR</p>
-              <div class="flex justify-center py-5 text-kekaBlue">
-                <!-- <i class="fa-brands fa-facebook"></i>
+        <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+          <div>
+            <div class="p-2 flex items-center justify-center">
+              <div
+                class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                :style="{ backgroundImage: `url(${ken})` }"
+              ></div>
+            </div>
+            <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
+            <p class="text-sm text-center">MANAGING DIRECTOR</p>
+            <div class="flex justify-center py-5 text-kekaBlue">
+              <!-- <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i> -->
-                <i class="fa-brands fa-linkedin linkedin-icon"></i>
-              </div>
+              <i class="fa-brands fa-linkedin linkedin-icon"></i>
             </div>
           </div>
-          <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
-            <div>
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${eva})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">EVA</p>
-              <p class="text-sm text-center">SALES DIRECTOR</p>
-              <div class="flex justify-center py-5 text-kekaBlue">
-                <!-- <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+          <div>
+            <div class="p-2 flex items-center justify-center">
+              <div
+                class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                :style="{ backgroundImage: `url(${eva})` }"
+              ></div>
+            </div>
+            <p class="text-md text-center font-bold py-5">EVA</p>
+            <p class="text-sm text-center">SALES DIRECTOR</p>
+            <div class="flex justify-center py-5 text-kekaBlue">
+              <!-- <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i> -->
-                <i class="fa-brands fa-linkedin linkedin-icon"></i>
-              </div>
+              <i class="fa-brands fa-linkedin linkedin-icon"></i>
             </div>
           </div>
-       
+        </div>
+
         <div class="flex justify-center">
           <button
             class="py-2 px-6 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
@@ -649,7 +647,7 @@ export default {
     const goToAuthentic = () => {
       router.push({ name: "authentic" });
     };
-        const goToAbout = () => {
+    const goToAbout = () => {
       router.push({ name: "about-us" });
     };
     const scrollToServices = () => {
