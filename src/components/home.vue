@@ -396,7 +396,7 @@
           </div>
         </div> -->
 
-        <div class="flex">
+        
           <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
             <div>
               <div class="p-2 flex items-center justify-center">
@@ -431,7 +431,7 @@
               </div>
             </div>
           </div>
-        </div>
+       
         <div class="flex justify-center">
           <button
             class="py-2 px-6 call_to_action bg-kekaBlue text-white rounded-[20px] shadow-md"
