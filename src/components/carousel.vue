@@ -25,12 +25,11 @@
         </button>
       </div>
       <div class="absolute bottom-6 right-4">
-          <i
-            class="fa fa-arrow-down animate-bounce w-8 h-8 border-2 border-blue-500 rounded-full flex items-center justify-center"
-            aria-hidden="true"
-          >
-          </i
+        <i
+          class="fa fa-arrow-down animate-bounce w-8 h-8 border-2 border-blue-500 rounded-full flex items-center justify-center"
+          aria-hidden="true"
         >
+        </i>
       </div>
 
       <div
@@ -120,8 +119,7 @@ export default {
   transition: transform 1s ease-in-out;
 }
 .call_to_action button:hover {
-  background-color: white;  
-  color:black;
-  
+  background-color: white;
+  color: black;
 }
 </style>
