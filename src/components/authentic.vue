@@ -7,8 +7,9 @@
         :style="{ backgroundImage: `url(${slide})` }"
       >
         <div class="pt-10">
-          
-          <div class="flex justify-center text-4xl text-white font-bold pb-10 pl-10">
+          <div
+            class="flex justify-center text-4xl text-white font-bold pb-10 pl-10"
+          >
             AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
           </div>
           <div class="flex justify-center text-white text-xl pl-10">
@@ -103,7 +104,9 @@
             customer has never been closer to your brand than with authentic!
           </p>
         </div>
-        <div class="sm:w-full xs:w-full lg:w-1/2 my-5 lg:px-20 xs:px-10 text-center">
+        <div
+          class="sm:w-full xs:w-full lg:w-1/2 my-5 lg:px-20 xs:px-10 text-center"
+        >
           <img
             src="../assets/authentic_d.jpg"
             class="p-5 h-96 flex items-center"
@@ -117,12 +120,11 @@
         </div>
       </div>
       <Footer />
-
     </div>
   </div>
 </template>
 <script>
-import { ref , onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import navigation from "./navigation.vue";
 import Footer from "./footer.vue";
 
@@ -133,7 +135,7 @@ export default {
   },
   setup() {
     const slide = require("../assets/authentic_a.jpg");
-        const swipe = () => {
+    const swipe = () => {
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
