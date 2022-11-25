@@ -115,10 +115,21 @@ export default {
     const daasCooperateFormData = {
       
     }
+
+    const submitDaasSchoolsformData = {
+
+    }
+    const submitAuthenticFormData =  {}
+    
+    const submitDaasCooperateFormData = {}
+
     return {
       daasSchoolsformData,
       authenticFormData,
       daasCooperateFormData,
+      submitDaasSchoolsformData,
+      submitAuthenticFormData,
+      submitDaasCooperateFormData
     }
   },
 };
