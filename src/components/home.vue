@@ -395,10 +395,9 @@
             </div>
           </div>
         </div> -->
-
-        <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+        <div class="lg:flex">        <div class="w-full lg:w-1/2 xs:w-full team">
           <div>
-            <div class="p-2 flex items-center justify-center">
+            <div class=" flex items-center justify-center">
               <div
                 class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                 :style="{ backgroundImage: `url(${ken})` }"
@@ -413,9 +412,9 @@
             </div>
           </div>
         </div>
-        <div class="sm:w-full lg:w-1/2 xs:w-full p-5 team">
+        <div class="w-full lg:w-1/2 xs:w-full team">
           <div>
-            <div class="p-2 flex items-center justify-center">
+            <div class=" flex items-center justify-center">
               <div
                 class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                 :style="{ backgroundImage: `url(${eva})` }"
@@ -429,7 +428,8 @@
               <i class="fa-brands fa-linkedin linkedin-icon"></i>
             </div>
           </div>
-        </div>
+        </div></div>
+
 
         <div class="flex justify-center">
           <button
@@ -707,6 +707,9 @@ export default {
 };
 </script>
 <style scoped>
+*{
+  box-sizing: border-box !important;
+}
 .nav {
   z-index: -1;
 }
