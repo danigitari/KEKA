@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bg-kekaBlue">
+  <div class="footer bg-kekaBlue relative bottom-0">
     <div class="flex flex-wrap lg:px-10">
       <div class="lg:w-1/3 sm:w-1/2 xs:w-full pt-10">
         <img src="../assets/logo.jpeg" class="h-36 px-10 my-5" alt="" />
@@ -58,24 +58,31 @@
         </div>
       </div>
     </div>
+    <div class="flex justify-end pr-10 ">
+      <a href="#"><div class=" scroll-up h-8 w-8 shadow-md rounded-full bg-white flex justify-center items-center">
+        <i class="fa-sharp fa-solid fa-arrow-up  "></i>
+      </div></a> 
+      
+    </div>
     <div class="px-20 py-10">
       <hr />
       <div class="flex justify-center items-center pt-10 text-white">
         Copyright ©2022 Keka Precision limited All Rights Reserved
       </div>
     </div>
+
   </div>
 </template>
 <script>
-// import useRouter from "vue-router"
-// export default {
-//     setup() {
-//         const router = useRouter()
-//         return  {
-//             router
-//         }
-//     },
-// }
+import {useRouter} from "vue-router"
+export default {
+    setup() {
+        const router = useRouter()
+        return  {
+            router
+        }
+    },
+}
 </script>
 <style>
 .icons {
@@ -83,5 +90,11 @@
 }
 .icons:hover {
   transform: scale(1.4);
+}
+.scroll-up{
+  transition: .2s ease;
+}
+.scroll-up:hover {
+  transform: scale(1.2);
 }
 </style>

@@ -244,7 +244,7 @@
         </div>
       </div>
       <div class="flex justify-center p-10">
-        <img src="../assets/daas.jpeg" alt="" />
+        <img src="../assets/image006.png" alt="" />
       </div>
       <div class="flex justify-center flex-col  p-10">
         <p class="font-bold flex justify-center text-xl p-10"> Partnerships with Intel and VMWare make this possible </p> 

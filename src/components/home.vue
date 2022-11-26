@@ -534,6 +534,7 @@
     </div>
     <Footer></Footer>
   </div>
+  
 </template>
 <script>
 import { onMounted, ref } from "@vue/runtime-core";
@@ -709,6 +710,7 @@ export default {
 <style scoped>
 *{
   box-sizing: border-box !important;
+  scroll-behavior: smooth;
 }
 .nav {
   z-index: -1;

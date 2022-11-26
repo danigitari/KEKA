@@ -31,8 +31,8 @@
                 <div class="bg-white text-sm">Aws managed services</div>
                 <div @click="goToAuthentic" class="text-sm">Authentic</div>
                 <div class="test-daas-dropdown">
-                  <div class="flex justify-between">
-                    <div @click="goToDaas" class="">Device as a service</div>
+                  <div @click="goToDaas" class="flex justify-between">
+                    <div  class="">Device as a service</div>
                     <div>
                       <i class="fa-sharp fa-solid fa-chevron-right"> </i>
                     </div>
@@ -157,6 +157,7 @@ nav ul > li {
   font-weight: 400;
   font-size: 17px;
   font-style: normal;
+  transition: .2s ease;
 }
 nav ul li i {
   font-size: 11px;
@@ -191,7 +192,7 @@ nav ul li:hover {
   padding: 20px;
   border-bottom: 1px solid gray;
   font-size: 16px;
-  transition: 0.4s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .test-dropdown-menu > div:hover {
