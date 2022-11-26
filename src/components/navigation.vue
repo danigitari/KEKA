@@ -32,7 +32,7 @@
                 <div @click="goToAuthentic" class="text-sm">Authentic</div>
                 <div class="test-daas-dropdown">
                   <div @click="goToDaas" class="flex justify-between">
-                    <div  class="">Device as a service</div>
+                    <div class="">Device as a service</div>
                     <div>
                       <i class="fa-sharp fa-solid fa-chevron-right"> </i>
                     </div>
@@ -51,6 +51,10 @@
             </div>
           </li>
           <li class="navlink">
+            <router-link to="" class="font-bold text-sm"> EVENTS </router-link>
+          </li>
+
+          <li class="navlink">
             <router-link to="contact-us" class="font-bold text-sm"
               >CONTACT US
             </router-link>
@@ -63,19 +67,50 @@
         </button>
       </div>
     </div>
-
   </nav>
-      <div class="hidden hambuger block">
-      <div class="flex flex-col  text-kekaBlue" >
-        <div class="w-full flex justify-center items-center" @click.prevent="goToHome">Home</div> 
-        <div class="w-full flex justify-center items-center " @click.prevent="goToAbout"> About us</div> 
-        <div class="w-full flex justify-center items-center" @click.prevent="goToAuthentic"> Authentic </div>
-        <div class="w-full flex justify-center items-center" @click.prevent="goToDaasEducation"> The shule project  </div>
-        <div class="w-full flex justify-center items-center" @click.prevent="goToDaasBusiness"> Daas cooperate </div>
-        <div class="w-full flex justify-center items-center" @click.prevent=""> Aws managed services </div>
-        <div class="w-full flex justify-center items-center" @click.prevent="goToContact"> Contact-us</div> 
+  <div class="hidden hambuger block">
+    <div class="flex flex-col text-kekaBlue">
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToHome"
+      >
+        Home
+      </div>
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToAbout"
+      >
+        About us
+      </div>
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToAuthentic"
+      >
+        Authentic
+      </div>
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToDaasEducation"
+      >
+        The shule project
+      </div>
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToDaasBusiness"
+      >
+        Daas cooperate
+      </div>
+      <div class="w-full flex justify-center items-center" @click.prevent="">
+        Aws managed services
+      </div>
+      <div
+        class="w-full flex justify-center items-center"
+        @click.prevent="goToContact"
+      >
+        Contact-us
       </div>
     </div>
+  </div>
 </template>
 <script>
 import { useRouter } from "vue-router";
@@ -103,7 +138,7 @@ export default {
     const goToAbout = () => {
       router.push({ name: "about-us" });
     };
-        const goToAws = () => {
+    const goToAws = () => {
       router.push({ name: "aws " });
     };
 
@@ -125,7 +160,6 @@ export default {
       showHambugerMenu,
       goToAbout,
       goToAws,
-
     };
   },
 };
@@ -157,7 +191,7 @@ nav ul > li {
   font-weight: 400;
   font-size: 17px;
   font-style: normal;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 nav ul li i {
   font-size: 11px;
@@ -231,7 +265,7 @@ nav ul li:hover {
 }
 .hambuger-menu-dropdown {
   display: block !important;
-  
+
   font-size: 16px;
   transition: 0.4s ease-in;
 }
@@ -240,12 +274,10 @@ nav ul li:hover {
   font-size: 16px;
   transition: 0.2s ease-in;
   padding: 20px;
-
 }
 .hambuger-menu-dropdown > div > div:hover {
-background-color: #1762e2;
-color: #fff;
-
+  background-color: #1762e2;
+  color: #fff;
 }
 @media (max-width: 480px) {
 }
