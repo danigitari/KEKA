@@ -50,9 +50,9 @@
               </div>
             </div>
           </li>
-          <li class="navlink">
+          <!-- <li class="navlink">
             <router-link to="" class="font-bold text-sm"> EVENTS </router-link>
-          </li>
+          </li> -->
 
           <li class="navlink">
             <router-link to="contact-us" class="font-bold text-sm"
