@@ -538,15 +538,11 @@
 </template>
 <script>
 import { onMounted, ref } from "@vue/runtime-core";
-import carousel from "../components/carousel.vue";
-import carouselSlide from "../components/carouselSlide.vue";
 import navigation from "../components/navigation.vue";
 import Footer from "../components/footer.vue";
 import { useRouter } from "vue-router";
 export default {
   components: {
-    carousel,
-    carouselSlide,
     navigation,
     Footer,
   },
