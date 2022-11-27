@@ -11,7 +11,7 @@
               class="text-white  md:ml-10 lg:ml-10 md:pl-10 px-10  absolute"
             >
               <p
-                class=" mt-10 mb-10 pt-10 font-bold text-[30px]  md:text-[40px]   lg:text-[70px] text-white  flex justify-right text-left align-content-start"
+                class=" mt-10 mb-10 pt-10 font-bold text-[30px]  md:text-[40px]   lg:text-[60px] text-white  flex justify-right text-left align-content-start"
               >
                   ABOUT US  
               </p>
