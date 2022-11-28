@@ -109,7 +109,7 @@
       Forrester Consulting, “Invest in Employee Experience (EX), Drive Your
       Bottomline Growth” on behalf of Intel & Lenovo, August 2020.</div>  
     </div>
-          <div class="flex flex-wrap justify-center pb-10 bg-white box my-20 ">
+          <div class="flex flex-wrap justify-center pb-10 bg-white box my-20 space-y-8">
         <div class="w-full  lg:w-1/4  justify-center mr-5 p-5 rounded-[10px] services ">
           <h4 class="text-kekaBlue font-bold py-5"> 
               Deliver a better user experience
@@ -176,7 +176,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped >
 .section {
   background-position: right;
 }

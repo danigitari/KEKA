@@ -5,7 +5,7 @@
       <div class="relative">
         <div class="overlay"></div>
         <div
-          class="bg-cover object-fit pt-5 pb-20 section"
+          class="bg-cover object-fit pt-10 mb-20 section"
           :style="{ backgroundImage: `url(${slide})` }"
         >
           <div class="">
@@ -66,7 +66,7 @@
         </p>
       </div>
       <div class="flex flex-wrap justify-center pb-10 bg-white">
-        <div class="w-full  lg:w-1/4  justify-center mr-5 p-5 rounded-[10px] services ">
+        <div class="w-full  lg:w-1/5  justify-center m-5 p-5 rounded-[10px] services ">
           <h4 class="text-kekaBlue font-bold py-5">
             Affordable access to Devices
           </h4>
@@ -81,7 +81,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center m-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">
             Management and Deployment
           </h4>
@@ -97,7 +97,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center m-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">Training</h4>
           <p class="leading-relaxed mb-3 text-sm">
             Trained Staff including the cost of training. Improving the student
@@ -111,7 +111,7 @@
             ></button>
           </div>
         </div>
-        <div class="w-full lg:w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div class="w-full lg:w-1/5 justify-center m-5 p-5 rounded-[10px] services">
           <h4 class="text-kekaBlue font-bold py-5">Technical Sustainability</h4>
           <p class="leading-relaxed mb-3 text-sm">
             ICT sustainability for the long term. This includes device refresh,
@@ -277,8 +277,8 @@ export default {
 </script>
 <style scoped>
 .section {
-  height: 500px;
-  background-position: left;
+  height: 550px;
+  background-position: center;
 }
 .dropdown-menu {
   top: calc(100% + 0.5rem);
