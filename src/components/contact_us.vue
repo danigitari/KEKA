@@ -100,7 +100,7 @@
 <script>
 import navigation from "./navigation.vue";
 import Footer from "./footer.vue";
-// import axios from "axios"
+import axios from 'axios'
 export default {
   components: {
     navigation,
@@ -108,7 +108,7 @@ export default {
   },
   setup() {
     const daasSchoolsformData = {
-      
+
     
     }
     const authenticFormData =  {
@@ -118,12 +118,23 @@ export default {
       
     }
 
-    const submitDaasSchoolsformData = {
-
+    const submitDaasSchoolsformData = () => {
+            axios.post('http://localhost:8080' , daasSchoolsformData ).then(response => {
+              return response
+        
+      })
     }
-    const submitAuthenticFormData =  {}
+    const submitAuthenticFormData = () => {
+            axios.post('http://localhost:8080' , authenticFormData ).then(response => {
+              return response
+        
+      })}
     
-    const submitDaasCooperateFormData = {}
+    const submitDaasCooperateFormData = () => {
+            axios.post('http://localhost:8080' , daasCooperateFormData ).then(response => {
+              return response
+        
+      })}
 
     return {
       daasSchoolsformData,

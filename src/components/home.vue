@@ -541,6 +541,7 @@ import { onMounted, ref } from "@vue/runtime-core";
 import navigation from "../components/navigation.vue";
 import Footer from "../components/footer.vue";
 import { useRouter } from "vue-router";
+
 export default {
   components: {
     navigation,
