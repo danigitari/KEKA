@@ -54,7 +54,7 @@
           Work from Anywhere experience for your workers. And we are registered
           partners for all major manufacturers whose Logos feature in this
           document. This gives you freedom of choice on brand while benfiting
-          from our DaaS. 
+          from our DaaS. 
         </div>
       </div>
     </div>
@@ -100,15 +100,63 @@
       needs, and fast asset recovery to reduce downtime.
     </div>
     <div class="article-links">
-      <div>1 SMB Group, SMBs: Navigating a Path Forward, 2020.</div> 
-      <div> 2 A Cybersecurity
-      Magazine, 10 Small Business Cyber Security Statistics That You Should Know
-      – And How to Improve Them, May 2021.</div> <div> 3 Salesforce, Fifth Edition Small and
+      <div> <span class="px-3">1</span>  SMB Group, SMBs: Navigating a Path Forward, 2020.</div> 
+      <div> <span class="px-3">2</span> A Cybersecurity
+      Magazine, 10 Small Business Cyber Security Statistics That You Should Know
+      - And How to Improve Them, May 2021.</div> <div> <span class="px-3">3</span> Salesforce, Fifth Edition Small and
       Medium Business Trends Report, 2021. </div>
-      <div>4 A commissioned study conducted by
+      <div><span class="px-3">4</span> A commissioned study conducted by
       Forrester Consulting, “Invest in Employee Experience (EX), Drive Your
-      Bottomline Growth” on behalf of Intel & Lenovo, August 2020.</div>  
+      Bottomline Growth” on behalf of Intel & Lenovo, August 2020.</div>  
     </div>
+          <div class="flex flex-wrap justify-center pb-10 bg-white box my-20 ">
+        <div class="w-full  lg:w-1/4  justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5"> 
+              Deliver a better user experience
+          </h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            Selecting PCs based on the latest Intel vPro® platform provides best-for-business performance, hardware-level security, platform stability, and remote manageability — helping better plan PC technology refreshes and improving end user experiences
+          </p>
+
+        </div>
+        <div class="w-full lg:w-1/4 justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5">
+            Refocus your IT resources and objectives
+          </h4>
+          <p class="leading-relaxed mb-3 text-sm">
+            While handling your PC lifecycle management, your IT resources are free to focus on strategic initiatives and business-building projects.
+          </p>
+
+        </div>
+        <div class="w-full lg:w-1/4 justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5">Simplify deployment and costs</h4>
+          <p class="leading-relaxed mb-3 text-sm">
+         Bundle hardware, software, services, and support into a single end-to-end solution with a consistent, per-user payment
+          </p>
+
+        </div>
+        <div class="w-full lg:w-1/4 justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5">Standard or custom solutions</h4>
+          <p class="leading-relaxed mb-3 text-sm">
+       You can buy solutions either custom or standardized (off the shelf) based on your unique business needs. Your purchase experience will be exemplary in either case. The most complete technology portfolio from client devices
+          </p>
+
+        </div>
+                <div class="w-full lg:w-1/4 justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5">Flexible options per business needs</h4>
+          <p class="leading-relaxed mb-3 text-sm">
+       Add units at any time in contract term Reduce contract volume after the mid-term of the contract
+          </p>
+
+        </div>
+                <div class="w-full lg:w-1/4 justify-center mr-5 p-5 rounded-[10px] services ">
+          <h4 class="text-kekaBlue font-bold py-5">Asset Recovery Services</h4>
+          <p class="leading-relaxed mb-3 text-sm">
+       We manage the return logistics for your systems at the end of life Simple & easy with streamlined takeback of devices, Reporting throughout asset disposition process.
+          </p>
+
+        </div>
+      </div>
     <Footer />
   </div>
 </template>
@@ -142,5 +190,13 @@ export default {
 .article-links {
   font-family: Poppins, sans-serif;
   padding: 10px;
+}
+.services {
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box !important;
+}
+.services:hover {
+  transform: scale(1.05);
 }
 </style>
