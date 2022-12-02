@@ -6,17 +6,32 @@
         class="bg-cover object-fit pt-10 section"
         :style="{ backgroundImage: `url(${slide})` }"
       >
-        <div class="pt-10">
-          <div
-            class="flex justify-center text-4xl text-white font-bold pb-10 pl-10"
-          >
-            AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
+                <div class=" hero mt-10 pt-10">
+            <div
+              class="text-white md:ml-10 lg:ml-10 md:pl-10 lg:pl-10 lg:w-1/2 absolute"
+            >
+              <p
+                class="mt-10 mb-10 font-bold text-3xl text-white flex justify-right pl-5 text-left align-content-start"
+              >
+                AUTHENTIC ANTI-COUNTERFEIT SOLUTIONS
+              </p>
+
+              <p
+                class="mb-10 font-bold text-lg text-white flex justify-right pl-5 text-left"
+              >
+                We create human friendly solutions protecting consumers , brands
+                and producers for quality consumption and revenue enhancement.
+              </p>
+              <div class="text-center flex justify-start pl-5">
+                <button
+                  class="bg-kekaBlue rounded-[20px] text-white px-6 py-2"
+                  @click="goToAuthentic"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="flex justify-center text-white text-xl pl-10">
-            We create human friendly solutions protecting consumers , brands and
-            producers for quality consumption and revenue enhancement.
-          </div>
-        </div>
       </div>
 
       <div class="p-10 mb-10">
