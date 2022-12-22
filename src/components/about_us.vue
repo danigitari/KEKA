@@ -215,9 +215,7 @@ export default {
       florence,
       ernest,
       scrollToTop,
-
     }
-    
   },
 }
 </script>

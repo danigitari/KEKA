@@ -1,6 +1,6 @@
 <template>
   <navigation />
-  <div class="contact_us bg-gray-100">
+  <div class="contact_us bg-gray-200">
     <div
       class="heading bg-kekaBlue pl-10 text-white lg:pl-20 py-10 text-xl font-bold"
     >
@@ -223,4 +223,5 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+</style>

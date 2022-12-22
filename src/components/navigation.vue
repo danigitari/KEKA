@@ -15,7 +15,7 @@
           <li class="navlink" @click.prevent="goToHome">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>
           </li>
-          <li class="navlink">
+          <li class="navlink" @click.prevent="goToAbout" >
             <router-link to="about-us" class="font-bold text-sm"
               >ABOUT US
             </router-link>
@@ -54,7 +54,7 @@
             <router-link to="" class="font-bold text-sm"> EVENTS </router-link>
           </li> -->
 
-          <li class="navlink">
+          <li class="navlink" @click.prevent="goToContact">
             <router-link to="contact-us" class="font-bold text-sm"
               >CONTACT US
             </router-link>
@@ -141,6 +141,9 @@ export default {
     const goToAws = () => {
       router.push({ name: "aws " });
     };
+        const goToContact = () => {
+      router.push({ name: "contact-us" });
+    };
 
     const toggleNavbarClass = () => {};
     const showHambugerMenu = () => {
@@ -160,6 +163,7 @@ export default {
       showHambugerMenu,
       goToAbout,
       goToAws,
+      goToContact
     };
   },
 };

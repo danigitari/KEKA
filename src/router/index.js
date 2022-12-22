@@ -5,7 +5,7 @@ import Daas from '../components/daas'
 import DaasCooperate from '../components/daas_cooperate'
 import ShuleProject from '../components/the_shule_project.vue'
 import AWS from '../components/aws-managed-services.vue'
-import AboutUs from "../components/about_us.vue";
+import AboutUs from "../components/about_us.vue"
 import Contactus from "../components/contact_us.vue"
 import Faq from "../components/faq.vue"
 
@@ -45,7 +45,7 @@ const routes = [
   },
   {
     path: "/contact-us",
-    name: "dcontact-us",
+    name: "contact-us",
     component: Contactus,
   },
   {

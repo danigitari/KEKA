@@ -510,7 +510,7 @@
         </div>
       </div>
     </div>
-    <div class="contact bg-gray-100 p-10">
+    <div class="contact bg-gray-100 p-10">  
       <p class="text-2xl font-bold m-10 text-dark flex justify-center">
         CONTACT US
       </p>
