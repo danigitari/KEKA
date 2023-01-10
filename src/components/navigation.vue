@@ -1,7 +1,7 @@
 <template>
   <nav class="relative text-kekaBlue font-bold navbar">
     <div
-      class="flex w-full text-xs md:flex md:text-sm md:mr-20 items-center justify-between md:flex-row lg:flex-row"
+      class="flex w-full text-xs md:flex md:text-sm items-center justify-between md:flex-row lg:flex-row"
     >
       <span class="flex items-center justify-start">
         <div class="pl-5 lg:pl-20">
@@ -15,12 +15,12 @@
           <li class="navlink" @click.prevent="goToHome">
             <router-link to="/" class="font-bold text-sm">HOME</router-link>
           </li>
-          <li class="navlink" @click.prevent="goToAbout" >
+          <li class="navlink" @click.prevent="goToAbout">
             <router-link to="about-us" class="font-bold text-sm"
               >ABOUT US
             </router-link>
           </li>
-          <li class="services">
+          <li class="services flex">
             <div class="test-dropdown">
               <div class="text">
                 <p class="font-bold text-sm">SERVICES</p>
@@ -50,22 +50,44 @@
               </div>
             </div>
           </li>
-          <!-- <li class="navlink">
-            <router-link to="" class="font-bold text-sm"> EVENTS </router-link>
-          </li> -->
-
-          <li class="navlink" @click.prevent="goToContact">
-            <router-link to="contact-us" class="font-bold text-sm"
-              >CONTACT US
-            </router-link>
+          <li class="navlink">
+            <router-link to="" class="font-bold text-sm"> FAQ </router-link>
+          </li>
+      <li class="services flex">
+            <div class="test-dropdown">
+              <div class="text">
+                <p class="font-bold text-sm">OUR COMPANY</p>
+                <i class="fa-sharp fa-solid fa-chevron-down px-2 font-bold">
+                </i>
+              </div>
+              <div class="test-dropdown-menu">
+          
+                <div @click="goToAuthentic" class="text-sm">Events</div>
+                <div class="test-daas-dropdown">
+                  <div @click="goToDaas" class="flex justify-between">
+                    <div class="">Blog</div>
+    
+                  </div>
+            
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="hambuger-menu" @click.prevent="showHambugerMenu">
-        <button class="block font-bold text-[18px] mr-10 md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <div
+        class="navlink bg-kekaBlue px-6 rounded-[25px] text-white py-3 hidden md:flex md:justify-end mr-20"
+        @click.prevent="goToContact"
+      >
+        <div to="contact-us" class="font-bold text-sm"
+          >CONTACT US
+        </div>
       </div>
+    </div>
+    <div class="hambuger-menu" @click.prevent="showHambugerMenu">
+      <button class="block font-bold text-[18px] mr-10 md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </nav>
   <div class="hidden hambuger block">
@@ -141,7 +163,7 @@ export default {
     const goToAws = () => {
       router.push({ name: "aws " });
     };
-        const goToContact = () => {
+    const goToContact = () => {
       router.push({ name: "contact-us" });
     };
 
@@ -163,7 +185,7 @@ export default {
       showHambugerMenu,
       goToAbout,
       goToAws,
-      goToContact
+      goToContact,
     };
   },
 };

@@ -17,7 +17,7 @@
         <div class="swiper-slide relative">
           <div class="overlay absolute"></div>
           <div class="absolute w-full h-full">
-            <img src="../assets/img4a.jpeg" class="backgroundimage1" alt="" />
+            <img src="../assets/img4b.jpeg" class="backgroundimage1" alt="" />
           </div>
           <div class="absolute hero my-10">
             <div class="pt-10">
@@ -53,7 +53,7 @@
         <div class="swiper-slide relative">
           <div class="overlay absolute"></div>
           <div class="absolute w-full h-full">
-            <img src="../assets/board.jpeg" alt="" />
+            <img src="../assets/comp1.jpeg" alt="" />
           </div>
           <div class="absolute hero mt-10 pt-10">
             <div
@@ -69,7 +69,7 @@
               >
                 Device as a Service (DaaS) equips businesses with a full PC
                 fleet, IT support, and device life-cycle management packaged
-                together in one subscription-based offering. .
+                together in one subscription-based offering . 
               </p>
               <div class="text-center flex justify-start mx-5">
                 <button
