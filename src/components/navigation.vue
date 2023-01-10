@@ -76,7 +76,7 @@
         </ul>
       </div>
       <div
-        class="navlink bg-kekaBlue px-6 rounded-[25px] text-white py-3 hidden md:flex md:justify-end mr-20"
+        class="contact bg-kekaBlue px-6 rounded-[25px] text-white py-3 hidden md:flex md:justify-end mr-20"
         @click.prevent="goToContact"
       >
         <div to="contact-us" class="font-bold text-sm"
@@ -291,7 +291,6 @@ nav ul li:hover {
 }
 .hambuger-menu-dropdown {
   display: block !important;
-
   font-size: 16px;
   transition: 0.4s ease-in;
 }
@@ -304,6 +303,12 @@ nav ul li:hover {
 .hambuger-menu-dropdown > div > div:hover {
   background-color: #1762e2;
   color: #fff;
+}
+.contact{
+  transition: all .5s ease
+}
+.contact:hover{
+  transform: scale(1.1);
 }
 @media (max-width: 480px) {
 }

@@ -268,7 +268,7 @@ export default {
     Footer,
   },
   setup() {
-    const slide = require("../assets/comp1.jpeg");
+    const slide = require("../assets/daas_school.jpg");
     return {
       slide,
     };
