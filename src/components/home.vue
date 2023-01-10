@@ -3,6 +3,13 @@
     <div class="nav">
       <navigation />
     </div>
+    <a href="#"
+       @click="scrollIntoView">
+       <div
+        class="fixed scroll-up h-12 w-12 shadow-md rounded-full bg-kekaBlue bottom-4 right-4 flex justify-center items-center"
+      >
+        <i class="fa-sharp fa-solid fa-arrow-up text-white"></i></div
+    ></a>
 
     <!-- :style=" {backgroundImage: `url(${backgroundimage})` }" -->
     <div class="swiper mySwiper">
@@ -10,7 +17,7 @@
         <div class="swiper-slide relative">
           <div class="overlay absolute"></div>
           <div class="absolute w-full h-full">
-            <img src="../assets/img1.jpg" alt="" />
+            <img src="../assets/img4a.jpeg" class="backgroundimage1" alt="" />
           </div>
           <div class="absolute hero my-10">
             <div class="pt-10">
@@ -107,7 +114,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide relative">
+        <!-- <div class="swiper-slide relative">
           <div class="overlay absolute"></div>
 
           <div class="absolute w-full h-full">
@@ -139,7 +146,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="swiper-button-next text-white"></div>
       <div class="swiper-button-prev text-white"></div>
@@ -153,7 +160,9 @@
         </p>
       </div>
       <div class="flex flex-wrap justify-center mb-10">
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div
+          class="w-1/5 justify-center mr-10 ml-10 p-5 rounded-[10px] services"
+        >
           <h4 class="text-kekaBlue font-bold py-5">Aws Managed services</h4>
           <p class="leading-relaxed mb-3 text-sm">
             We design and build secure, high-performance, resilient, and
@@ -166,7 +175,9 @@
             <button class="rounded-[20px] text-kekaBlue">Learn More</button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div
+          class="w-1/5 justify-center mr-10 ml-10 p-5 rounded-[10px] services"
+        >
           <h4 class="text-kekaBlue font-bold py-5">
             Device as a Service - Education
           </h4>
@@ -184,7 +195,9 @@
             </button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
+        <div
+          class="w-1/5 justify-center mr-10 ml-10 p-5 rounded-[10px] services"
+        >
           <h4 class="text-kekaBlue font-bold py-5">
             Device as a Service - Business
           </h4>
@@ -202,22 +215,7 @@
             </button>
           </div>
         </div>
-        <div class="w-1/5 justify-center mr-5 p-5 rounded-[10px] services">
-          <h4 class="text-kekaBlue font-bold py-5">
-            Authentic Anticounterfeit Solution
-          </h4>
-          <p class="leading-relaxed mb-3 text-sm">
-            A proprietary print and recognition technology built for global
-            usage under challenging conditions, connected to value-added
-            services that protect your brand and intellectual property as a
-            manufacturer
-          </p>
-          <div class="flex justify-start py-5">
-            <button class="rounded-[20px] text-kekaBlue" @click="goToAuthentic">
-              Learn More
-            </button>
-          </div>
-        </div>
+
       </div>
 
       <div
@@ -256,180 +254,42 @@
           The team are professional cloud architects certified by AWS, VMWare
           and Intel on various cloud and device services
         </div>
-        <!-- 
-        <div class="flex flex-wrap mx-10">
-          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
+        <div class="lg:flex">
+          <div class="w-full lg:w-1/2 xs:w-full team">
             <div>
-              <div class="p-2 flex items-center justify-center">
+              <div class="flex items-center justify-center">
                 <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${elvis})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">ELVIS MUNENE</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${zippy})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">ZIPPORAH WACHIRA</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 lg:w-1/3 xs:w-full p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${dan})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">DANIEL GITARI</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
                   :style="{ backgroundImage: `url(${ken})` }"
                 ></div>
               </div>
               <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
-              <p class="text-sm text-center">Managing Director</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${sam})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">SAMUEL MUREKEFU</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${ernest})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">ERNEST OTIENO</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="sm:w-1/2 xs:w-full lg:w-1/3 p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${innocent})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">INNOCENT MAMBO</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-          <div class="lg:w-1/3 xs:w-full sm:w-1/2 p-5 team">
-            <div class="col-span-2 col-start-2">
-              <div class="p-2 flex items-center justify-center">
-                <div
-                  class="lg:w-84 lg:h-84 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                  :style="{ backgroundImage: `url(${florence})` }"
-                ></div>
-              </div>
-              <p class="text-md text-center font-bold py-5">FLORENCE SIMBA</p>
-              <p class="text-sm text-center">Cloud Architect</p>
-              <div class="flex justify-center gap-3 py-5 text-kekaBlue">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="lg:flex">        <div class="w-full lg:w-1/2 xs:w-full team">
-          <div>
-            <div class=" flex items-center justify-center">
-              <div
-                class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                :style="{ backgroundImage: `url(${ken})` }"
-              ></div>
-            </div>
-            <p class="text-md text-center font-bold py-5">KEN KAGOTA</p>
-            <p class="text-sm text-center">MANAGING DIRECTOR</p>
-            <div class="flex justify-center py-5 text-kekaBlue">
-              <!-- <i class="fa-brands fa-facebook"></i>
+              <p class="text-sm text-center">MANAGING DIRECTOR</p>
+              <div class="flex justify-center py-5 text-kekaBlue">
+                <!-- <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i> -->
-              <i class="fa-brands fa-linkedin linkedin-icon"></i>
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 xs:w-full team">
+            <div>
+              <div class="flex items-center justify-center">
+                <div
+                  class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
+                  :style="{ backgroundImage: `url(${eva})` }"
+                ></div>
+              </div>
+              <p class="text-md text-center font-bold py-5">EVA</p>
+              <p class="text-sm text-center">SALES DIRECTOR</p>
+              <div class="flex justify-center py-5 text-kekaBlue">
+                <!-- <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i> -->
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 xs:w-full team">
-          <div>
-            <div class=" flex items-center justify-center">
-              <div
-                class="lg:w-96 lg:h-96 md:h-64 md:w-64 sm:h-48 sm:w-48 xs:w-36 xs:h-36 rounded-lg my-5 photos"
-                :style="{ backgroundImage: `url(${eva})` }"
-              ></div>
-            </div>
-            <p class="text-md text-center font-bold py-5">EVA</p>
-            <p class="text-sm text-center">SALES DIRECTOR</p>
-            <div class="flex justify-center py-5 text-kekaBlue">
-              <!-- <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i> -->
-              <i class="fa-brands fa-linkedin linkedin-icon"></i>
-            </div>
-          </div>
-        </div></div>
-
 
         <div class="flex justify-center">
           <button
@@ -510,7 +370,7 @@
         </div>
       </div>
     </div>
-    <div class="contact bg-gray-100 p-10">  
+    <div class="contact bg-gray-100 p-10">
       <p class="text-2xl font-bold m-10 text-dark flex justify-center">
         CONTACT US
       </p>
@@ -534,7 +394,6 @@
     </div>
     <Footer></Footer>
   </div>
-  
 </template>
 <script>
 import { onMounted, ref } from "@vue/runtime-core";
@@ -705,7 +564,7 @@ export default {
 };
 </script>
 <style scoped>
-*{
+* {
   box-sizing: border-box !important;
   scroll-behavior: smooth;
 }
@@ -788,7 +647,9 @@ export default {
   background-size: contain;
   background-position: center;
 }
-
+.backgroundImage1{
+  background-position: top;
+}
 .overlay {
   opacity: 0.7;
   z-index: 6;
@@ -853,6 +714,11 @@ export default {
   /* height: 80px; */
   transition: all 0.5s ease;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.scroll-up {
+z-index: 12;
 }
 
 @media (max-width: 768px) {

@@ -10,7 +10,7 @@
       <div class="form-heading font-bold flex justify-center pt-20 py-5">
         AUTHENTIC ANTI-COUNTERFEIT SERVICE APPLICATION FORM
       </div>
-      <div class="flex flex-col justify-center lg:mx-20 lg:px-20">
+      <div class="flex flex-col justify-center lg:mx-20 lg:px-20 ">
         <div class="name flex flex-col gap-2 py-3">
           <label for=""> Name <span class="text-red-500"> * </span> </label>
           <input

@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../components/home'
-import Authentic from '../components/authentic'
+// import Authentic from '../components/authentic'
 import Daas from '../components/daas'
 import DaasCooperate from '../components/daas_cooperate'
 import ShuleProject from '../components/the_shule_project.vue'
@@ -17,11 +17,11 @@ const routes = [
     component: HomeView,
   },
 
-  {
-    path: "/authentic-anti-counterfeit-solutions",
-    name: "authentic",
-    component: Authentic,
-  },
+  // {
+  //   path: "/authentic-anti-counterfeit-solutions",
+  //   name: "authentic",
+  //   component: Authentic,
+  // },
   {
     path: "/aws-managed-services",
     name: "aws",
@@ -62,7 +62,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+  scrollBehavior() {
+    document.getElementById("app").scrollIntoView({ behavior: "smooth" });
+  },
+});
 
 export default router
